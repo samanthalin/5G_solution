@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes icn-float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+html{
+	font-size: 16px;
+	font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
+	body{
+		section.banner{
+			height: 70vw;
+			background-image: url(../../assets/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
+			background-size: cover;
+		}
+		nav{
+			background-color: #eeeeee;
+			width: 100%;
+			overflow: scroll;
+			padding: 10px 0;
+			ul{
+				width: max-content;
+				li{
+					display: inline-block;
+					padding: 0 5px;
+					a{
+						color: #575757;
+						border-radius: 7px;
+						padding: 5px 10px;
+						display: inline-block;
+					}
+					.active{
+						background-color: #00b2ff;
+						color: black;
+					}
+				}
+			}
+		}
+		section.brief{
+			background-color: #f9f7f7;
+			padding-top: 20px;
+			padding-bottom: 30px;
+			.frame{
+				width: 90%;
+				margin: auto;
+				.title{
+					color: #575757;
+					font-family: 'galano_grotesquesemibold';
+					font-size: 24px;
+				}
+				.content{
+					color: #575757;
+					margin-top: 15px;
+				}
+			}
+		}
+		section.solution-benifits{
+			padding: 30px 0;
+			.frame{
+				width: 90%;
+				margin: auto;
+				.title{
+					color: #575757;
+					text-align: center;
+					font-family: 'galano_grotesquesemibold';
+					font-size: 28px;
+				}
+				.box-wrap{
+					margin-top: 15px;
+					.box{
+						margin-top: 30px;
+						img{
+							width: 100%;
+						}
+						.text{
+							margin-top: 15px;
+							.title{
+								color: black;
+								font-size: 20px;
+								text-align: left;
+							}
+							.content{
+								margin-top: 15px;
+							}
+						}
+					}
+				}
+			}
+		}//solution-benifits
+		section.sn-nsa{
+			padding-bottom: 40px;
+			.frame{
+				.image{
+					height: 78vw;
+					background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
+					background-size: cover;
+				}
+				.text{
+					width: 90%;
+					margin: auto;
+					margin-top: 15px;
+					.title{
+						font-family: 'galano_grotesquesemibold';
+						font-size: 20px;
+					}
+					.content{
+						margin-top: 15px;
+					}
+					.button{
+						background-color: #00b2ff;
+						color: white;
+						font-family: 'galano_grotesquesemibold';
+						padding: 6px 15px;
+						padding-right: 25px;
+						display: inline-block;
+						border-radius: 10px;
+						margin-top: 15px;
+						.arrow{
+							position: relative;
+							&:before{
+								position: absolute;
+								top: -14px;
+								left: 5px;
+								animation: icn-float 1s linear infinite;
+							}
+						}
+					}
+				}
+			}
+		}//sn-nsa
+		section.sn-nsa-hidden{
+			background-color: white;
+			ul.switch{
+				width: 100%;
+				background-color: #00b2ff;
+				display: flex;
+				li{
+					flex: 1;
+					text-align: center;
+					background-color: #004fee;
+					a{
+						color: white;
+						font-family: 'galano_grotesquesemibold';
+						font-size: 18px;
+						display: block;
+						padding: 10px 0;
+						position: relative;
+					}
+					.active{
+						background-color: #0079ff;
+						&:after{
+							content: ' ';
+							position: absolute;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 10px 10px 0 10px;
+							border-color: #0079ff transparent transparent transparent;
+							top: 100%;
+							left: calc(50% - 10px);
+						}
+					}
+				}
+			}//switch
+			.panel{
+				padding: 30px 0 20px 0;
+				.frame{
+					width: 90%;
+					margin: auto;
+					.title{
+						color: #575757;
+						font-family: 'galano_grotesquesemibold';
+						font-size: 26px;
+					}
+					img{
+						width: 100%;
+					}
+					.structure-img{
+						margin-top: 15px;
+					}
+				}
+			}//panel
+		}//sn-nsa-hidden
+		section.nr-solution{
+			.frame{
+				.image{
+					height: 100vw;
+					background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
+					background-size: cover;
+					background-position: right;
+				}
+				.text{
+					width: 90%;
+					margin: auto;
+					margin-top: 15px;
+					.title{
+						font-family: "galano_grotesquesemibold";
+    					font-size: 20px;
+					}
+					.content{
+						margin-top: 15px;
+					}
+					img{
+						width: 100%;
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+}
