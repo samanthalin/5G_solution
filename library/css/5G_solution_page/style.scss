@@ -23,10 +23,10 @@ html{
 			background-image: url(../../assets/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
 			background-size: cover;
 		}
-		nav{
+		nav.second-nav{
 			background-color: #eeeeee;
 			width: 100%;
-			overflow: scroll;
+			overflow-x: scroll;
 			padding: 10px 0;
 			ul{
 				width: max-content;
@@ -192,12 +192,19 @@ html{
 			}//panel
 		}//sn-nsa-hidden
 		section.nr-solution{
+			padding-bottom: 40px;
 			.frame{
 				.image{
 					height: 100vw;
 					background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
 					background-size: cover;
 					background-position: right;
+				}
+				img.intro-img{
+					display: block;
+					width: 90%;
+					margin: auto;
+					margin-top: 14px;
 				}
 				.text{
 					width: 90%;
@@ -210,8 +217,103 @@ html{
 					.content{
 						margin-top: 15px;
 					}
-					img{
+					img.intro-img{
 						width: 100%;
+						margin-top: 15px;
+						display: none;
+					}
+				}
+			}
+		}//section.nr-solution
+		section.scenarios-mobile{
+			.cat{
+				background-color: #003eab;
+				text-align: center;
+				padding: 10px;
+				.title{
+					color: white;
+					text-align: center;
+					font-family: 'galano_grotesquesemibold';
+					font-size: 28px;
+				}
+				.img{
+					width: 150px;
+					height: 150px;
+					background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
+					background-size: cover;
+					display: block;
+					margin: auto;
+					border: 3px solid white;
+					margin-top: 10px;
+				}
+				.name{
+					color: white;
+					 padding: 7px;
+					 font-family: 'galano_grotesquesemibold';
+				}
+				i{
+					color: white;
+					animation: icn-float 1s linear infinite;
+				}
+			}
+			.indoor{
+				.img{
+					background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png);
+				}
+			}
+			.basement{
+				.img{
+					background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
+				}
+			}
+			.scenario-outdoor-img{
+				height: 60vw;
+				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
+				background-size: 180%;
+    			background-position: 10% bottom;
+			}
+			.scenario-indoor-img{
+				height: 83vw;
+				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
+				background-size: 177%;
+			    background-position-x: right;
+			    background-repeat: no-repeat;
+			}
+			.scenario-basement-img{
+				height: 72vw;
+				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
+				background-size: cover;
+			}
+			.intro-img{
+				display: block;
+				width: 90%;
+				margin: auto;
+				margin-top: 15px;
+			}
+			.cat-description{
+				padding: 5%;
+				p.title{
+					font-family: 'galano_grotesquesemibold';
+					font-size: 18px;
+				}
+				p.content{
+					margin-top: 10px;
+				}
+			}
+		}//section.scenarios-mobile
+		section.zyxel-lte{
+			.frame{
+				img{
+					width: 100%;
+				}
+				.text{
+					width: 90%;
+					margin: auto;
+					.title{
+						font-family: 'galano_grotesquesemibold';
+						font-size: 20px;
+					}
+					.content{
 						margin-top: 15px;
 					}
 				}

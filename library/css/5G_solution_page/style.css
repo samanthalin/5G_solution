@@ -22,26 +22,26 @@ html body section.banner {
   background-image: url(../../assets/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
   background-size: cover;
 }
-html body nav {
+html body nav.second-nav {
   background-color: #eeeeee;
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
   padding: 10px 0;
 }
-html body nav ul {
+html body nav.second-nav ul {
   width: max-content;
 }
-html body nav ul li {
+html body nav.second-nav ul li {
   display: inline-block;
   padding: 0 5px;
 }
-html body nav ul li a {
+html body nav.second-nav ul li a {
   color: #575757;
   border-radius: 7px;
   padding: 5px 10px;
   display: inline-block;
 }
-html body nav ul li .active {
+html body nav.second-nav ul li .active {
   background-color: #00b2ff;
   color: black;
 }
@@ -188,11 +188,20 @@ html body section.sn-nsa-hidden .panel .frame img {
 html body section.sn-nsa-hidden .panel .frame .structure-img {
   margin-top: 15px;
 }
+html body section.nr-solution {
+  padding-bottom: 40px;
+}
 html body section.nr-solution .frame .image {
   height: 100vw;
   background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
   background-size: cover;
   background-position: right;
+}
+html body section.nr-solution .frame img.intro-img {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 14px;
 }
 html body section.nr-solution .frame .text {
   width: 90%;
@@ -206,8 +215,93 @@ html body section.nr-solution .frame .text .title {
 html body section.nr-solution .frame .text .content {
   margin-top: 15px;
 }
-html body section.nr-solution .frame .text img {
+html body section.nr-solution .frame .text img.intro-img {
   width: 100%;
+  margin-top: 15px;
+  display: none;
+}
+html body section.scenarios-mobile .cat {
+  background-color: #003eab;
+  text-align: center;
+  padding: 10px;
+}
+html body section.scenarios-mobile .cat .title {
+  color: white;
+  text-align: center;
+  font-family: "galano_grotesquesemibold";
+  font-size: 28px;
+}
+html body section.scenarios-mobile .cat .img {
+  width: 150px;
+  height: 150px;
+  background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
+  background-size: cover;
+  display: block;
+  margin: auto;
+  border: 3px solid white;
+  margin-top: 10px;
+}
+html body section.scenarios-mobile .cat .name {
+  color: white;
+  padding: 7px;
+  font-family: "galano_grotesquesemibold";
+}
+html body section.scenarios-mobile .cat i {
+  color: white;
+  animation: icn-float 1s linear infinite;
+}
+html body section.scenarios-mobile .indoor .img {
+  background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png);
+}
+html body section.scenarios-mobile .basement .img {
+  background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
+}
+html body section.scenarios-mobile .scenario-outdoor-img {
+  height: 60vw;
+  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
+  background-size: 180%;
+  background-position: 10% bottom;
+}
+html body section.scenarios-mobile .scenario-indoor-img {
+  height: 83vw;
+  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
+  background-size: 177%;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+html body section.scenarios-mobile .scenario-basement-img {
+  height: 72vw;
+  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
+  background-size: cover;
+}
+html body section.scenarios-mobile .intro-img {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+html body section.scenarios-mobile .cat-description {
+  padding: 5%;
+}
+html body section.scenarios-mobile .cat-description p.title {
+  font-family: "galano_grotesquesemibold";
+  font-size: 18px;
+}
+html body section.scenarios-mobile .cat-description p.content {
+  margin-top: 10px;
+}
+html body section.zyxel-lte .frame img {
+  width: 100%;
+}
+html body section.zyxel-lte .frame .text {
+  width: 90%;
+  margin: auto;
+}
+html body section.zyxel-lte .frame .text .title {
+  font-family: "galano_grotesquesemibold";
+  font-size: 20px;
+}
+html body section.zyxel-lte .frame .text .content {
   margin-top: 15px;
 }
 
