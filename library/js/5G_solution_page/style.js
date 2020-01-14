@@ -13,4 +13,23 @@ $(document).ready(function(){
 		$(href).addClass('animated');
 		return false;
 	});
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav',
+		draggable: false,
+		swipe: false,
+	});
+	$('.slider-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		dots: false,
+		centerMode: false,
+		focusOnSelect: true,
+		draggable: false,
+		swipe: false
+	});
 });

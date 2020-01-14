@@ -35,6 +35,7 @@ html{
 			padding: 10px 0;
 			ul{
 				width: max-content;
+				margin: auto;
 				li{
 					display: inline-block;
 					padding: 0 5px;
@@ -66,7 +67,13 @@ html{
 				.content{
 					color: #575757;
 					margin-top: 15px;
+					@media screen and (min-width: 992px) {
+						margin-top: 25px;
+					}
 				}
+			}
+			@media screen and (min-width: 992px) {
+				padding: 60px 0;
 			}
 		}
 		section.solution-benifits{
@@ -79,6 +86,9 @@ html{
 					text-align: center;
 					font-family: 'galano_grotesquesemibold';
 					font-size: 28px;
+					@media screen and (min-width: 992px) {
+						font-size: 36px;
+					}
 				}
 				.box-wrap{
 					margin-top: 15px;
@@ -111,12 +121,16 @@ html{
 						.text{
 							@media screen and (min-width: 768px) {
 								padding-right: 25px;
+								align-self: center;
 							}
 						}
 						@media screen and (min-width: 768px) {
 							width: 100%;
 							display: flex;
 							flex-direction: row-reverse;
+							@media screen and (min-width: 992px) {
+								margin-top: 60px;
+							}
 						}
 					}
 					@media screen and (min-width: 768px) {
@@ -131,11 +145,15 @@ html{
 				background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(220,220,220,1) 100%);
 				background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(220,220,220,1) 100%);
 				background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(220,220,220,1) 100%);
+				@media screen and (min-width: 992px) {
+					padding: 60px 0;
+				}
 			}
 		}//solution-benifis
 		section.sn-nsa{
 			padding-bottom: 40px;
 			.frame{
+				height: 100%;
 				.image{
 					height: 78vw;
 					background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
@@ -178,6 +196,10 @@ html{
 					@media screen and (min-width: 768px) {
 						width: 50%;
 						margin: initial;
+						@media screen and (min-width: 992px) {
+							align-self: center;
+							width: 58%;
+						}
 					}
 				}//text
 				@media screen and (min-width: 768px) {
@@ -192,6 +214,11 @@ html{
 				background-size: 73%;
 				background-repeat: no-repeat;
 				padding: 40px 0;
+				@media screen and (min-width: 992px) {
+					background-size: 80%;
+					height: 44vw;
+					background-position-x: -30%;
+				}
 			}
 		}//sn-nsa
 		section.sn-nsa-hidden{
@@ -334,8 +361,8 @@ html{
 				}
 				.name{
 					color: white;
-					 padding: 7px;
-					 font-family: 'galano_grotesquesemibold';
+					padding: 7px;
+					font-family: 'galano_grotesquesemibold';
 				}
 				i{
 					color: white;
@@ -386,13 +413,185 @@ html{
 					margin-top: 10px;
 				}
 			}
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
 		}//section.scenarios-mobile
+		section.scenarios{
+			display: none;
+			background-color: #003eab;
+			padding: 25px 0;
+			.frame{
+				width: 80%;
+				margin: auto;
+				.title{
+					color: white;
+					text-align: center;
+					font-family: 'galano_grotesquesemibold';
+					font-size: 28px;
+				}
+				.cat-wrap{
+					margin-top: 25px;
+					.cat{
+						text-align: center;
+						outline: none;
+						.img{
+							width: 150px;
+							height: 150px;
+							border: 3px solid white;
+							margin: auto;
+						}
+						.name{
+							color: white;
+							padding: 7px;
+							font-family: 'galano_grotesquesemibold';
+						}
+						i{
+							color: white;
+							animation: icn-float 1s linear infinite;
+						}
+					}
+					.slick-current{
+						.img{
+							border-color: #ffc800;
+						}
+						.name, i{
+							color: #ffc800;
+						}
+					}
+					.outdoor .img{
+						background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
+						background-size: cover;
+					}
+					.indoor .img{
+						background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png);
+						background-size: cover;
+					}
+					.basement .img{
+						background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
+						background-size: cover;
+					}
+				}
+			}
+			@media screen and (min-width: 768px) {
+				display: block;
+			}
+		}
+		section.scenarios-panel{
+			display: none;
+			.outdoor{
+				width: 100%;
+				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
+				background-size: cover;
+				background-position-x: 110%;
+				background-repeat: no-repeat;
+				height: 50vw;
+				.frame{
+					width: 90%;
+					height: 100%;
+					margin: auto;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					position: relative;
+					.text{
+						width: 47%;
+						img.intro-img{
+							position: absolute;
+							width: 300px;
+							right: 0;
+							bottom: 40px;
+						}
+					}
+				}	
+					
+			}
+			.indoor{
+				width: 100%;
+				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 50vw;
+				.frame{
+					width: 90%;
+					height: 100%;
+					margin: auto;
+					display: flex;
+					align-items: center;
+					.text{
+						width: 40%;
+						img{
+							width: 200px;
+							margin-top: 60px;
+						}
+					}
+				}
+			}
+			.basement{
+				width: 100%;
+				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 50vw;
+				.frame{
+					width: 90%;
+					height: 100%;
+					margin: auto;
+					display: flex;
+					align-items: flex-end;
+					justify-content: flex-end;
+					position: relative;
+					.text{
+						width: 40%;
+						padding-bottom: 5%;
+						img{
+							width: 300px;
+							position: absolute;
+							right: 0;
+							top: 39%;
+						}
+						p.content{
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+			p.title{
+				font-family: 'galano_grotesquesemibold';
+				font-size: 18px;
+			}
+			p.content{
+				margin-top: 25px;
+			}
+			@media screen and (min-width: 768px) {
+				display: block;
+			}
+		}
 		section.zyxel-lte{
 			background-color: #f2f2f2;
 			padding: 20px 0;
 			.frame{
-				img{
+				img.mobile-img{
 					width: 100%;
+					@media screen and (min-width: 768px) {
+						display: none;
+					}
+				}
+				.image{
+					display: none;
+					img{
+						@media screen and (min-width: 768px) {
+							width: 56%;
+						}
+					}
+					@media screen and (min-width: 768px) {
+						display: block;
+						flex: 2;
+						display: flex;
+						align-items: flex-end;
+						justify-content: flex-end;
+						padding-right: 40px;
+					}
 				}
 				.text{
 					width: 90%;
@@ -405,7 +604,23 @@ html{
 					.content{
 						margin-top: 15px;
 					}
+					@media screen and (min-width: 768px) {
+						flex: 3;
+					}
 				}
+				@media screen and (min-width: 768px) {
+					display: flex;
+					height: 100%;
+					width: 90%;
+					margin: auto;
+				}
+			}//frame
+			@media screen and (min-width: 768px) {
+				background-image: url(../../assets/5G_solution_page/zyxel_lte_bg.jpg);
+				background-size: cover;
+				background-position: right;
+				height: 50vw;
+				padding: 0;
 			}
 		}//section.zyxel-lte
 		section.featured-products{
@@ -428,9 +643,11 @@ html{
 							overflow: hidden;
 							background-color: black;
 							margin-bottom: 10px;
+							overflow: hidden;
 							img{
 								width: 100%;
 								display: block;
+								transition: all 0.2s ease;
 							}
 						}//product-img
 						.product-name{
@@ -439,6 +656,11 @@ html{
 						}
 						.model-name{
 							color: #575757;
+						}
+						&:hover{
+							img{
+								opacity: 0.5;
+							}
 						}
 					}
 					.product:hover{
@@ -452,6 +674,12 @@ html{
 							position: absolute;
 							left: calc(50% - 125px);
 							top: 90px;
+							@media screen and (min-width: 768px) {
+								width: 200px;
+    							height: 32px;
+								left: calc(50% - 100px);
+    							top: 100px;
+							}
 						}
 					}
 				}
