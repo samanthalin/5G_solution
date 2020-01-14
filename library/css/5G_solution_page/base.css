@@ -209,7 +209,6 @@ html body header .full .nav-container .nav-right .hamburger {
 html body footer {
   width: 100%;
   background-color: #f2f2f2;
-  margin-top: 60px;
   padding-top: 20px;
   transition: all 0.2s ease;
   -webkit-font-smoothing: antialiased;

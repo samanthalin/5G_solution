@@ -1,308 +1,365 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @keyframes icn-float {
   0% {
-    transform: translateY(0%);
-  }
+    transform: translateY(0%); }
   50% {
-    transform: translateY(10%);
-  }
+    transform: translateY(10%); }
   100% {
-    transform: translateY(0%);
-  }
-}
+    transform: translateY(0%); } }
 html {
   font-size: 16px;
-  font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
-}
-html body section.banner {
-  height: 70vw;
-  background-image: url(../../assets/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
-  background-size: cover;
-}
-html body nav.second-nav {
-  background-color: #eeeeee;
-  width: 100%;
-  overflow-x: scroll;
-  padding: 10px 0;
-}
-html body nav.second-nav ul {
-  width: max-content;
-}
-html body nav.second-nav ul li {
-  display: inline-block;
-  padding: 0 5px;
-}
-html body nav.second-nav ul li a {
-  color: #575757;
-  border-radius: 7px;
-  padding: 5px 10px;
-  display: inline-block;
-}
-html body nav.second-nav ul li .active {
-  background-color: #00b2ff;
-  color: black;
-}
-html body section.brief {
-  background-color: #f9f7f7;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-html body section.brief .frame {
-  width: 90%;
-  margin: auto;
-}
-html body section.brief .frame .title {
-  color: #575757;
-  font-family: "galano_grotesquesemibold";
-  font-size: 24px;
-}
-html body section.brief .frame .content {
-  color: #575757;
-  margin-top: 15px;
-}
-html body section.solution-benifits {
-  padding: 30px 0;
-}
-html body section.solution-benifits .frame {
-  width: 90%;
-  margin: auto;
-}
-html body section.solution-benifits .frame .title {
-  color: #575757;
-  text-align: center;
-  font-family: "galano_grotesquesemibold";
-  font-size: 28px;
-}
-html body section.solution-benifits .frame .box-wrap {
-  margin-top: 15px;
-}
-html body section.solution-benifits .frame .box-wrap .box {
-  margin-top: 30px;
-}
-html body section.solution-benifits .frame .box-wrap .box img {
-  width: 100%;
-}
-html body section.solution-benifits .frame .box-wrap .box .text {
-  margin-top: 15px;
-}
-html body section.solution-benifits .frame .box-wrap .box .text .title {
-  color: black;
-  font-size: 20px;
-  text-align: left;
-}
-html body section.solution-benifits .frame .box-wrap .box .text .content {
-  margin-top: 15px;
-}
-html body section.sn-nsa {
-  padding-bottom: 40px;
-}
-html body section.sn-nsa .frame .image {
-  height: 78vw;
-  background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
-  background-size: cover;
-}
-html body section.sn-nsa .frame .text {
-  width: 90%;
-  margin: auto;
-  margin-top: 15px;
-}
-html body section.sn-nsa .frame .text .title {
-  font-family: "galano_grotesquesemibold";
-  font-size: 20px;
-}
-html body section.sn-nsa .frame .text .content {
-  margin-top: 15px;
-}
-html body section.sn-nsa .frame .text .button {
-  background-color: #00b2ff;
-  color: white;
-  font-family: "galano_grotesquesemibold";
-  padding: 6px 15px;
-  padding-right: 25px;
-  display: inline-block;
-  border-radius: 10px;
-  margin-top: 15px;
-}
-html body section.sn-nsa .frame .text .button .arrow {
-  position: relative;
-}
-html body section.sn-nsa .frame .text .button .arrow:before {
-  position: absolute;
-  top: -14px;
-  left: 5px;
-  animation: icn-float 1s linear infinite;
-}
-html body section.sn-nsa-hidden {
-  background-color: white;
-}
-html body section.sn-nsa-hidden ul.switch {
-  width: 100%;
-  background-color: #00b2ff;
-  display: flex;
-}
-html body section.sn-nsa-hidden ul.switch li {
-  flex: 1;
-  text-align: center;
-  background-color: #004fee;
-}
-html body section.sn-nsa-hidden ul.switch li a {
-  color: white;
-  font-family: "galano_grotesquesemibold";
-  font-size: 18px;
-  display: block;
-  padding: 10px 0;
-  position: relative;
-}
-html body section.sn-nsa-hidden ul.switch li .active {
-  background-color: #0079ff;
-}
-html body section.sn-nsa-hidden ul.switch li .active:after {
-  content: " ";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #0079ff transparent transparent transparent;
-  top: 100%;
-  left: calc(50% - 10px);
-}
-html body section.sn-nsa-hidden .panel {
-  padding: 30px 0 20px 0;
-}
-html body section.sn-nsa-hidden .panel .frame {
-  width: 90%;
-  margin: auto;
-}
-html body section.sn-nsa-hidden .panel .frame .title {
-  color: #575757;
-  font-family: "galano_grotesquesemibold";
-  font-size: 26px;
-}
-html body section.sn-nsa-hidden .panel .frame img {
-  width: 100%;
-}
-html body section.sn-nsa-hidden .panel .frame .structure-img {
-  margin-top: 15px;
-}
-html body section.nr-solution {
-  padding-bottom: 40px;
-}
-html body section.nr-solution .frame .image {
-  height: 100vw;
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
-  background-size: cover;
-  background-position: right;
-}
-html body section.nr-solution .frame img.intro-img {
-  display: block;
-  width: 90%;
-  margin: auto;
-  margin-top: 14px;
-}
-html body section.nr-solution .frame .text {
-  width: 90%;
-  margin: auto;
-  margin-top: 15px;
-}
-html body section.nr-solution .frame .text .title {
-  font-family: "galano_grotesquesemibold";
-  font-size: 20px;
-}
-html body section.nr-solution .frame .text .content {
-  margin-top: 15px;
-}
-html body section.nr-solution .frame .text img.intro-img {
-  width: 100%;
-  margin-top: 15px;
-  display: none;
-}
-html body section.scenarios-mobile .cat {
-  background-color: #003eab;
-  text-align: center;
-  padding: 10px;
-}
-html body section.scenarios-mobile .cat .title {
-  color: white;
-  text-align: center;
-  font-family: "galano_grotesquesemibold";
-  font-size: 28px;
-}
-html body section.scenarios-mobile .cat .img {
-  width: 150px;
-  height: 150px;
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
-  background-size: cover;
-  display: block;
-  margin: auto;
-  border: 3px solid white;
-  margin-top: 10px;
-}
-html body section.scenarios-mobile .cat .name {
-  color: white;
-  padding: 7px;
-  font-family: "galano_grotesquesemibold";
-}
-html body section.scenarios-mobile .cat i {
-  color: white;
-  animation: icn-float 1s linear infinite;
-}
-html body section.scenarios-mobile .indoor .img {
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png);
-}
-html body section.scenarios-mobile .basement .img {
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
-}
-html body section.scenarios-mobile .scenario-outdoor-img {
-  height: 60vw;
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
-  background-size: 180%;
-  background-position: 10% bottom;
-}
-html body section.scenarios-mobile .scenario-indoor-img {
-  height: 83vw;
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
-  background-size: 177%;
-  background-position-x: right;
-  background-repeat: no-repeat;
-}
-html body section.scenarios-mobile .scenario-basement-img {
-  height: 72vw;
-  background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
-  background-size: cover;
-}
-html body section.scenarios-mobile .intro-img {
-  display: block;
-  width: 90%;
-  margin: auto;
-  margin-top: 15px;
-}
-html body section.scenarios-mobile .cat-description {
-  padding: 5%;
-}
-html body section.scenarios-mobile .cat-description p.title {
-  font-family: "galano_grotesquesemibold";
-  font-size: 18px;
-}
-html body section.scenarios-mobile .cat-description p.content {
-  margin-top: 10px;
-}
-html body section.zyxel-lte .frame img {
-  width: 100%;
-}
-html body section.zyxel-lte .frame .text {
-  width: 90%;
-  margin: auto;
-}
-html body section.zyxel-lte .frame .text .title {
-  font-family: "galano_grotesquesemibold";
-  font-size: 20px;
-}
-html body section.zyxel-lte .frame .text .content {
-  margin-top: 15px;
-}
+  font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif; }
+  html body section.banner {
+    height: 70vw;
+    background-image: url(../../assets/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
+    background-size: cover;
+    background-position: center; }
+    @media screen and (min-width: 768px) {
+      html body section.banner {
+        background-image: url(../../assets/5G_solution_page/5g_homepage_banner_1920x982_191226.jpg);
+        height: 50vw; } }
+  html body nav.second-nav {
+    background-color: #eeeeee;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 10px 0; }
+    html body nav.second-nav ul {
+      width: max-content; }
+      html body nav.second-nav ul li {
+        display: inline-block;
+        padding: 0 5px; }
+        html body nav.second-nav ul li a {
+          color: #575757;
+          border-radius: 7px;
+          padding: 5px 10px;
+          display: inline-block; }
+        html body nav.second-nav ul li .active {
+          background-color: #00b2ff;
+          color: black; }
+  html body section.brief {
+    background-color: #f9f7f7;
+    padding-top: 20px;
+    padding-bottom: 30px; }
+    html body section.brief .frame {
+      width: 90%;
+      margin: auto; }
+      html body section.brief .frame .title {
+        color: #575757;
+        font-family: 'galano_grotesquesemibold';
+        font-size: 24px; }
+      html body section.brief .frame .content {
+        color: #575757;
+        margin-top: 15px; }
+  html body section.solution-benifits {
+    padding: 30px 0; }
+    html body section.solution-benifits .frame {
+      width: 90%;
+      margin: auto; }
+      html body section.solution-benifits .frame .title {
+        color: #575757;
+        text-align: center;
+        font-family: 'galano_grotesquesemibold';
+        font-size: 28px; }
+      html body section.solution-benifits .frame .box-wrap {
+        margin-top: 15px; }
+        html body section.solution-benifits .frame .box-wrap .box {
+          margin-top: 30px; }
+          html body section.solution-benifits .frame .box-wrap .box img {
+            width: 100%; }
+          html body section.solution-benifits .frame .box-wrap .box .text {
+            margin-top: 15px; }
+            html body section.solution-benifits .frame .box-wrap .box .text .title {
+              color: black;
+              font-size: 20px;
+              text-align: left; }
+            html body section.solution-benifits .frame .box-wrap .box .text .content {
+              margin-top: 15px; }
+          @media screen and (min-width: 768px) {
+            html body section.solution-benifits .frame .box-wrap .box {
+              width: 48%; } }
+        @media screen and (min-width: 768px) {
+          html body section.solution-benifits .frame .box-wrap .down img {
+            width: 50%; } }
+        @media screen and (min-width: 768px) {
+          html body section.solution-benifits .frame .box-wrap .down .text {
+            padding-right: 25px; } }
+        @media screen and (min-width: 768px) {
+          html body section.solution-benifits .frame .box-wrap .down {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse; } }
+        @media screen and (min-width: 768px) {
+          html body section.solution-benifits .frame .box-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; } }
+    @media screen and (min-width: 768px) {
+      html body section.solution-benifits {
+        background: white;
+        /* Old browsers */
+        background: -webkit-linear-gradient(white 0%, white 70%, gainsboro 100%);
+        background: -o-linear-gradient(white 0%, white 70%, gainsboro 100%);
+        background: linear-gradient(white 0%, white 70%, gainsboro 100%); } }
+  html body section.sn-nsa {
+    padding-bottom: 40px; }
+    html body section.sn-nsa .frame .image {
+      height: 78vw;
+      background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
+      background-size: cover;
+      background-position: left; }
+      @media screen and (min-width: 768px) {
+        html body section.sn-nsa .frame .image {
+          display: none; } }
+    html body section.sn-nsa .frame .text {
+      width: 90%;
+      margin: auto;
+      margin-top: 15px; }
+      html body section.sn-nsa .frame .text .title {
+        font-family: 'galano_grotesquesemibold';
+        font-size: 20px; }
+      html body section.sn-nsa .frame .text .content {
+        margin-top: 15px; }
+      html body section.sn-nsa .frame .text .button {
+        background-color: #00b2ff;
+        color: white;
+        font-family: 'galano_grotesquesemibold';
+        padding: 6px 15px;
+        padding-right: 25px;
+        display: inline-block;
+        border-radius: 10px;
+        margin-top: 15px; }
+        html body section.sn-nsa .frame .text .button .arrow {
+          position: relative; }
+          html body section.sn-nsa .frame .text .button .arrow:before {
+            position: absolute;
+            top: -14px;
+            left: 5px;
+            animation: icn-float 1s linear infinite; }
+      @media screen and (min-width: 768px) {
+        html body section.sn-nsa .frame .text {
+          width: 50%;
+          margin: initial; } }
+    @media screen and (min-width: 768px) {
+      html body section.sn-nsa .frame {
+        display: flex;
+        justify-content: flex-end;
+        width: 90%;
+        margin: auto; } }
+    @media screen and (min-width: 768px) {
+      html body section.sn-nsa {
+        background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
+        background-size: 73%;
+        background-repeat: no-repeat;
+        padding: 40px 0; } }
+  html body section.sn-nsa-hidden {
+    background-color: white; }
+    html body section.sn-nsa-hidden ul.switch {
+      width: 100%;
+      background-color: #00b2ff;
+      display: flex; }
+      html body section.sn-nsa-hidden ul.switch li {
+        flex: 1;
+        text-align: center;
+        background-color: #004fee; }
+        html body section.sn-nsa-hidden ul.switch li a {
+          color: white;
+          font-family: 'galano_grotesquesemibold';
+          font-size: 18px;
+          display: block;
+          padding: 10px 0;
+          position: relative; }
+        html body section.sn-nsa-hidden ul.switch li .active {
+          background-color: #0079ff; }
+          html body section.sn-nsa-hidden ul.switch li .active:after {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 0 10px;
+            border-color: #0079ff transparent transparent transparent;
+            top: 100%;
+            left: calc(50% - 10px); }
+    html body section.sn-nsa-hidden .panel {
+      padding: 30px 0 20px 0; }
+      html body section.sn-nsa-hidden .panel .frame {
+        width: 90%;
+        margin: auto; }
+        html body section.sn-nsa-hidden .panel .frame .title {
+          color: #575757;
+          font-family: 'galano_grotesquesemibold';
+          font-size: 26px; }
+        html body section.sn-nsa-hidden .panel .frame img {
+          width: 100%; }
+        @media screen and (min-width: 768px) {
+          html body section.sn-nsa-hidden .panel .frame img.intro {
+            width: 70%; } }
+        html body section.sn-nsa-hidden .panel .frame .structure-img {
+          margin-top: 15px; }
+  html body section.nr-solution {
+    padding-bottom: 40px; }
+    html body section.nr-solution .frame .image {
+      height: 100vw;
+      background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
+      background-size: cover;
+      background-position: right; }
+      @media screen and (min-width: 768px) {
+        html body section.nr-solution .frame .image {
+          display: none; } }
+    html body section.nr-solution .frame img.intro-img {
+      display: block;
+      width: 90%;
+      margin: auto;
+      margin-top: 14px; }
+      @media screen and (min-width: 768px) {
+        html body section.nr-solution .frame img.intro-img {
+          display: none; } }
+    html body section.nr-solution .frame .text {
+      width: 90%;
+      margin: auto;
+      margin-top: 15px; }
+      html body section.nr-solution .frame .text .title {
+        font-family: "galano_grotesquesemibold";
+        font-size: 20px; }
+      html body section.nr-solution .frame .text .content {
+        margin-top: 15px; }
+      html body section.nr-solution .frame .text img.intro-img {
+        width: 100%;
+        margin-top: 15px;
+        display: none; }
+        @media screen and (min-width: 768px) {
+          html body section.nr-solution .frame .text img.intro-img {
+            display: block; } }
+      @media screen and (min-width: 768px) {
+        html body section.nr-solution .frame .text {
+          width: 50%;
+          margin: initial; } }
+    @media screen and (min-width: 768px) {
+      html body section.nr-solution .frame {
+        display: flex;
+        width: 90%;
+        margin: auto; } }
+    @media screen and (min-width: 768px) {
+      html body section.nr-solution {
+        background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
+        background-size: cover;
+        background-position: right;
+        padding: 40px 0; } }
+  html body section.scenarios-mobile .cat {
+    background-color: #003eab;
+    text-align: center;
+    padding: 10px; }
+    html body section.scenarios-mobile .cat .title {
+      color: white;
+      text-align: center;
+      font-family: 'galano_grotesquesemibold';
+      font-size: 28px;
+      padding: 15px 0; }
+    html body section.scenarios-mobile .cat .img {
+      width: 150px;
+      height: 150px;
+      background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
+      background-size: cover;
+      display: block;
+      margin: auto;
+      border: 3px solid white;
+      margin-top: 10px; }
+    html body section.scenarios-mobile .cat .name {
+      color: white;
+      padding: 7px;
+      font-family: 'galano_grotesquesemibold'; }
+    html body section.scenarios-mobile .cat i {
+      color: white;
+      animation: icn-float 1s linear infinite; }
+  html body section.scenarios-mobile .indoor .img {
+    background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png); }
+  html body section.scenarios-mobile .basement .img {
+    background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png); }
+  html body section.scenarios-mobile .scenario-outdoor-img {
+    height: 60vw;
+    background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
+    background-size: 180%;
+    background-position: 10% bottom; }
+  html body section.scenarios-mobile .scenario-indoor-img {
+    height: 83vw;
+    background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
+    background-size: 177%;
+    background-position-x: right;
+    background-repeat: no-repeat; }
+  html body section.scenarios-mobile .scenario-basement-img {
+    height: 72vw;
+    background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
+    background-size: cover; }
+  html body section.scenarios-mobile .intro-img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px; }
+  html body section.scenarios-mobile .cat-description {
+    padding: 5%; }
+    html body section.scenarios-mobile .cat-description p.title {
+      font-family: 'galano_grotesquesemibold';
+      font-size: 18px; }
+    html body section.scenarios-mobile .cat-description p.content {
+      margin-top: 10px; }
+  html body section.zyxel-lte {
+    background-color: #f2f2f2;
+    padding: 20px 0; }
+    html body section.zyxel-lte .frame img {
+      width: 100%; }
+    html body section.zyxel-lte .frame .text {
+      width: 90%;
+      margin: auto; }
+      html body section.zyxel-lte .frame .text .title {
+        font-family: 'galano_grotesquesemibold';
+        font-size: 20px;
+        margin-top: 15px; }
+      html body section.zyxel-lte .frame .text .content {
+        margin-top: 15px; }
+  html body section.featured-products {
+    padding: 30px 0; }
+    html body section.featured-products .frame {
+      text-align: center; }
+      html body section.featured-products .frame p.title {
+        color: #575757;
+        font-family: 'galano_grotesquesemibold';
+        font-size: 24px; }
+      html body section.featured-products .frame .product-wrap a.product {
+        display: inline-block;
+        margin-top: 30px;
+        position: relative; }
+        html body section.featured-products .frame .product-wrap a.product .product-img {
+          width: 220px;
+          height: 220px;
+          overflow: hidden;
+          background-color: black;
+          margin-bottom: 10px; }
+          html body section.featured-products .frame .product-wrap a.product .product-img img {
+            width: 100%;
+            display: block; }
+        html body section.featured-products .frame .product-wrap a.product .product-name {
+          color: #575757;
+          font-family: 'galano_grotesquesemibold'; }
+        html body section.featured-products .frame .product-wrap a.product .model-name {
+          color: #575757; }
+      html body section.featured-products .frame .product-wrap .product:hover:after {
+        content: ' ';
+        width: 250px;
+        height: 40px;
+        background-image: url(../../assets/5G_solution_page/quick_view.png);
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        left: calc(50% - 125px);
+        top: 90px; }
+      html body section.featured-products .frame a.button {
+        color: white;
+        background-color: #0079ff;
+        padding: 5px 15px;
+        border-radius: 15px;
+        display: inline-block;
+        margin-top: 25px; }
 
 /*# sourceMappingURL=style.css.map */
