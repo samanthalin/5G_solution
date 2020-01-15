@@ -1,4 +1,15 @@
 $(document).ready(function(){
+	
+	var navBar = $(".second-nav");
+	var bnHeight = $(".banner").height();
+	$(window).scroll(function() {
+	  if( $(this).scrollTop() > bnHeight + 50) {
+	    navBar.addClass("navScrolled");
+	  } else {
+	    navBar.removeClass("navScrolled");
+	  }
+	});
+
 	$('.sn-nsa .button').click(function() {
 		$('.sn-nsa-hidden').toggle();
 		$('.sn-nsa-hidden').addClass('animated');
@@ -18,7 +29,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
-		asNavFor: '.slider-nav',
+		// asNavFor: '.slider-nav',
 		draggable: false,
 		swipe: false,
 	});
@@ -30,6 +41,5 @@ $(document).ready(function(){
 		centerMode: false,
 		focusOnSelect: true,
 		draggable: false,
-		swipe: false
 	});
 });
