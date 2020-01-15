@@ -61,11 +61,22 @@ html body section.brief {
 html body section.brief .frame {
   width: 90%;
   margin: auto;
+  max-width: 1450px;
 }
 html body section.brief .frame .title {
   color: #575757;
   font-family: "galano_grotesquesemibold";
   font-size: 24px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.brief .frame .title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1400px) {
+  html body section.brief .frame .title {
+    font-size: 42px;
+  }
 }
 html body section.brief .frame .content {
   color: #575757;
@@ -74,11 +85,17 @@ html body section.brief .frame .content {
 @media screen and (min-width: 992px) {
   html body section.brief .frame .content {
     margin-top: 25px;
+    line-height: 22px;
   }
 }
 @media screen and (min-width: 992px) {
   html body section.brief {
     padding: 60px 0;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  html body section.brief {
+    padding: 110px 0;
   }
 }
 html body section.solution-benifits {
@@ -87,6 +104,7 @@ html body section.solution-benifits {
 html body section.solution-benifits .frame {
   width: 90%;
   margin: auto;
+  max-width: 1700px;
 }
 html body section.solution-benifits .frame .title {
   color: #575757;
@@ -97,6 +115,12 @@ html body section.solution-benifits .frame .title {
 @media screen and (min-width: 992px) {
   html body section.solution-benifits .frame .title {
     font-size: 36px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  html body section.solution-benifits .frame .title {
+    font-size: 52px;
+    padding: 20px 0;
   }
 }
 html body section.solution-benifits .frame .box-wrap {
@@ -116,12 +140,41 @@ html body section.solution-benifits .frame .box-wrap .box .text .title {
   font-size: 20px;
   text-align: left;
 }
+@media screen and (min-width: 1200px) {
+  html body section.solution-benifits .frame .box-wrap .box .text .title {
+    font-size: 28px;
+    padding: 10px 0;
+  }
+}
 html body section.solution-benifits .frame .box-wrap .box .text .content {
   margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.solution-benifits .frame .box-wrap .box .text .content {
+    line-height: 22px;
+  }
 }
 @media screen and (min-width: 768px) {
   html body section.solution-benifits .frame .box-wrap .box {
     width: 48%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  html body section.solution-benifits .frame .box-wrap .box {
+    width: 42%;
+  }
+}
+html body section.solution-benifits .frame .box-wrap .left, html body section.solution-benifits .frame .box-wrap .right {
+  max-width: 590px;
+}
+@media screen and (min-width: 1400px) {
+  html body section.solution-benifits .frame .box-wrap .left {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html body section.solution-benifits .frame .box-wrap .right {
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -152,6 +205,16 @@ html body section.solution-benifits .frame .box-wrap .box .text .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  html body section.solution-benifits .frame .box-wrap {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-width: 1400px) {
+  html body section.solution-benifits .frame .box-wrap {
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -189,10 +252,16 @@ html body section.sn-nsa .frame .text {
   width: 90%;
   margin: auto;
   margin-top: 15px;
+  max-width: 900px;
 }
 html body section.sn-nsa .frame .text .title {
   font-family: "galano_grotesquesemibold";
   font-size: 20px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa .frame .text .title {
+    font-size: 28px;
+  }
 }
 html body section.sn-nsa .frame .text .content {
   margin-top: 15px;
@@ -216,6 +285,13 @@ html body section.sn-nsa .frame .text .button .arrow:before {
   left: 5px;
   animation: icn-float 1s linear infinite;
 }
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa .frame .text .button {
+    margin-top: 25px;
+    padding: 10px 25px;
+    padding-right: 34px;
+  }
+}
 @media screen and (min-width: 768px) {
   html body section.sn-nsa .frame .text {
     width: 50%;
@@ -226,6 +302,12 @@ html body section.sn-nsa .frame .text .button .arrow:before {
   html body section.sn-nsa .frame .text {
     align-self: center;
     width: 58%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
+  html body section.sn-nsa .frame .text {
+    width: 55%;
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -254,17 +336,22 @@ html body section.sn-nsa .frame .text .button .arrow:before {
 html body section.sn-nsa-hidden {
   background-color: white;
 }
-html body section.sn-nsa-hidden ul.switch {
+html body section.sn-nsa-hidden .switch-wrap {
+  background-color: #00b2ff;
+}
+html body section.sn-nsa-hidden .switch-wrap ul.switch {
   width: 100%;
   background-color: #00b2ff;
   display: flex;
+  max-width: 1060px;
+  margin: auto;
 }
-html body section.sn-nsa-hidden ul.switch li {
+html body section.sn-nsa-hidden .switch-wrap ul.switch li {
   flex: 1;
   text-align: center;
   background-color: #004fee;
 }
-html body section.sn-nsa-hidden ul.switch li a {
+html body section.sn-nsa-hidden .switch-wrap ul.switch li a {
   color: white;
   font-family: "galano_grotesquesemibold";
   font-size: 18px;
@@ -272,10 +359,15 @@ html body section.sn-nsa-hidden ul.switch li a {
   padding: 10px 0;
   position: relative;
 }
-html body section.sn-nsa-hidden ul.switch li .active {
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa-hidden .switch-wrap ul.switch li a {
+    font-size: 24px;
+  }
+}
+html body section.sn-nsa-hidden .switch-wrap ul.switch li .active {
   background-color: #0079ff;
 }
-html body section.sn-nsa-hidden ul.switch li .active:after {
+html body section.sn-nsa-hidden .switch-wrap ul.switch li .active:after {
   content: " ";
   position: absolute;
   width: 0;
@@ -292,11 +384,18 @@ html body section.sn-nsa-hidden .panel {
 html body section.sn-nsa-hidden .panel .frame {
   width: 90%;
   margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 html body section.sn-nsa-hidden .panel .frame .title {
   color: #575757;
   font-family: "galano_grotesquesemibold";
   font-size: 26px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa-hidden .panel .frame .title {
+    font-size: 38px;
+  }
 }
 html body section.sn-nsa-hidden .panel .frame img {
   width: 100%;
@@ -304,10 +403,22 @@ html body section.sn-nsa-hidden .panel .frame img {
 @media screen and (min-width: 768px) {
   html body section.sn-nsa-hidden .panel .frame img.intro {
     width: 70%;
+    max-width: 600px;
+    margin-top: 30px;
   }
 }
 html body section.sn-nsa-hidden .panel .frame .structure-img {
   margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa-hidden .panel .frame .structure-img {
+    margin-top: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa-hidden .panel {
+    padding: 60px 0;
+  }
 }
 html body section.nr-solution {
   padding-bottom: 40px;
@@ -343,23 +454,50 @@ html body section.nr-solution .frame .text .title {
   font-family: "galano_grotesquesemibold";
   font-size: 20px;
 }
+@media screen and (min-width: 1200px) {
+  html body section.nr-solution .frame .text .title {
+    font-size: 28px;
+  }
+}
 html body section.nr-solution .frame .text .content {
   margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.nr-solution .frame .text .content {
+    margin-top: 24px;
+  }
 }
 html body section.nr-solution .frame .text img.intro-img {
   width: 100%;
   margin-top: 15px;
   display: none;
+  max-width: 550px;
 }
 @media screen and (min-width: 768px) {
   html body section.nr-solution .frame .text img.intro-img {
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  html body section.nr-solution .frame .text img.intro-img {
+    margin-top: 5vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
+  html body section.nr-solution .frame .text img.intro-img {
+    margin-top: 8vw;
+    margin-left: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   html body section.nr-solution .frame .text {
     width: 50%;
     margin: initial;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  html body section.nr-solution .frame .text {
+    align-self: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -369,12 +507,22 @@ html body section.nr-solution .frame .text img.intro-img {
     margin: auto;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  html body section.nr-solution .frame {
+    height: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   html body section.nr-solution {
     background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
     background-size: cover;
     background-position: right;
     padding: 40px 0;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  html body section.nr-solution {
+    height: 50vw;
   }
 }
 html body section.scenarios-mobile .cat {
@@ -468,12 +616,18 @@ html body section.scenarios .frame .title {
   font-family: "galano_grotesquesemibold";
   font-size: 28px;
 }
+@media screen and (min-width: 1200px) {
+  html body section.scenarios .frame .title {
+    font-size: 52px;
+  }
+}
 html body section.scenarios .frame .cat-wrap {
   margin-top: 25px;
 }
 html body section.scenarios .frame .cat-wrap .cat {
   text-align: center;
   outline: none;
+  cursor: pointer;
 }
 html body section.scenarios .frame .cat-wrap .cat .img {
   width: 150px;
@@ -481,14 +635,40 @@ html body section.scenarios .frame .cat-wrap .cat .img {
   border: 3px solid white;
   margin: auto;
 }
+@media screen and (min-width: 1200px) {
+  html body section.scenarios .frame .cat-wrap .cat .img {
+    width: 24vw;
+    height: 23vw;
+    max-width: 352px;
+    max-height: 325px;
+  }
+}
 html body section.scenarios .frame .cat-wrap .cat .name {
   color: white;
   padding: 7px;
   font-family: "galano_grotesquesemibold";
 }
+@media screen and (min-width: 1200px) {
+  html body section.scenarios .frame .cat-wrap .cat .name {
+    font-size: 24px;
+  }
+}
 html body section.scenarios .frame .cat-wrap .cat i {
   color: white;
   animation: icn-float 1s linear infinite;
+}
+@media screen and (min-width: 1200px) {
+  html body section.scenarios .frame .cat-wrap .cat i {
+    font-size: 24px;
+  }
+}
+html body section.scenarios .frame .cat-wrap .cat:hover .img {
+  border: 3px solid #ffc800;
+  transition: all 0.2s ease;
+}
+html body section.scenarios .frame .cat-wrap .cat:hover .name, html body section.scenarios .frame .cat-wrap .cat:hover i {
+  color: #ffc800;
+  transition: all 0.2s ease;
 }
 html body section.scenarios .frame .cat-wrap .slick-current .img {
   border-color: #ffc800;
@@ -508,9 +688,19 @@ html body section.scenarios .frame .cat-wrap .basement .img {
   background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  html body section.scenarios .frame .cat-wrap {
+    margin-top: 5vw;
+  }
+}
 @media screen and (min-width: 768px) {
   html body section.scenarios {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  html body section.scenarios {
+    padding: 60px 0;
   }
 }
 html body section.scenarios-panel {
@@ -542,6 +732,11 @@ html body section.scenarios-panel .outdoor .frame .text img.intro-img {
   right: 0;
   bottom: 40px;
 }
+@media screen and (min-width: 1200px) {
+  html body section.scenarios-panel .outdoor .frame .text img.intro-img {
+    width: 400px;
+  }
+}
 html body section.scenarios-panel .indoor {
   width: 100%;
   background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
@@ -562,6 +757,11 @@ html body section.scenarios-panel .indoor .frame .text {
 html body section.scenarios-panel .indoor .frame .text img {
   width: 200px;
   margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.scenarios-panel .indoor .frame .text img {
+    width: 300px;
+  }
 }
 html body section.scenarios-panel .basement {
   width: 100%;
@@ -589,12 +789,27 @@ html body section.scenarios-panel .basement .frame .text img {
   right: 0;
   top: 39%;
 }
+@media screen and (min-width: 1200px) {
+  html body section.scenarios-panel .basement .frame .text img {
+    width: 400px;
+  }
+}
 html body section.scenarios-panel .basement .frame .text p.content {
   margin-top: 5px;
+}
+@media screen and (min-width: 1400px) {
+  html body section.scenarios-panel .basement .frame .text {
+    padding-bottom: 10%;
+  }
 }
 html body section.scenarios-panel p.title {
   font-family: "galano_grotesquesemibold";
   font-size: 18px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.scenarios-panel p.title {
+    font-size: 28px;
+  }
 }
 html body section.scenarios-panel p.content {
   margin-top: 25px;
@@ -624,6 +839,11 @@ html body section.zyxel-lte .frame .image {
     width: 56%;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  html body section.zyxel-lte .frame .image img {
+    width: 62%;
+  }
+}
 @media screen and (min-width: 768px) {
   html body section.zyxel-lte .frame .image {
     display: block;
@@ -632,6 +852,12 @@ html body section.zyxel-lte .frame .image {
     align-items: flex-end;
     justify-content: flex-end;
     padding-right: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  html body section.zyxel-lte .frame .image {
+    padding: 0;
+    margin-right: 6vw;
   }
 }
 html body section.zyxel-lte .frame .text {
@@ -643,8 +869,18 @@ html body section.zyxel-lte .frame .text .title {
   font-size: 20px;
   margin-top: 15px;
 }
+@media screen and (min-width: 1200px) {
+  html body section.zyxel-lte .frame .text .title {
+    font-size: 28px;
+  }
+}
 html body section.zyxel-lte .frame .text .content {
   margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.zyxel-lte .frame .text .content {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   html body section.zyxel-lte .frame .text {
@@ -733,6 +969,21 @@ html body section.featured-products .frame a.button {
   border-radius: 15px;
   display: inline-block;
   margin-top: 25px;
+}
+@media screen and (min-width: 992px) {
+  html body section.featured-products .frame a.button {
+    margin-top: 55px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html body section.featured-products {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
