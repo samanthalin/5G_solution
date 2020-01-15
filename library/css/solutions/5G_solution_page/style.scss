@@ -13,18 +13,27 @@
     transform: translateY(0%);
   }
 }
-
+#solution-title{
+	display: none;
+}
+li{
+	list-style: none;
+}
+a, a:hover, a:active, a:focus{
+	text-decoration: none;
+	cursor: pointer;
+}
 html{
 	font-size: 16px;
 	font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
 	body{
 		section.banner{
 			height: 70vw;
-			background-image: url(../../assets/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
+			background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
 			background-size: cover;
 			background-position: center;
 			@media screen and (min-width: 768px) {
-				background-image: url(../../assets/5G_solution_page/5g_homepage_banner_1920x982_191226.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_1920x982_191226.jpg);
 				height: 50vw;
 			}
 		}
@@ -206,7 +215,7 @@ html{
 				height: 100%;
 				.image{
 					height: 78vw;
-					background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
+					background-image: url(../../../assets/solutions/5G_solution_page/sa_nsa_dual_mode_image.png);
 					background-size: cover;
 					background-position: left;
 					@media screen and (min-width: 768px) {
@@ -273,7 +282,7 @@ html{
 				}
 			}//frame
 			@media screen and (min-width: 768px) {
-				background-image: url(../../assets/5G_solution_page/sa_nsa_dual_mode_image.png);
+				background-image: url(../../../assets/solutions/5G_solution_page/sa_nsa_dual_mode_image.png);
 				background-size: 73%;
 				background-repeat: no-repeat;
 				padding: 40px 0;
@@ -368,7 +377,7 @@ html{
 			.frame{
 				.image{
 					height: 100vw;
-					background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
+					background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_01.jpg);
 					background-size: cover;
 					background-position: right;
 					@media screen and (min-width: 768px) {
@@ -436,7 +445,7 @@ html{
 				}
 			}//frame
 			@media screen and (min-width: 768px) {
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_01.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_01.jpg);
 				background-size: cover;
 				background-position: right;
 				padding: 40px 0;
@@ -460,7 +469,7 @@ html{
 				.img{
 					width: 150px;
 					height: 150px;
-					background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
+					background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_01.png);
 					background-size: cover;
 					display: block;
 					margin: auto;
@@ -479,30 +488,30 @@ html{
 			}
 			.indoor{
 				.img{
-					background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png);
+					background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_02.png);
 				}
 			}
 			.basement{
 				.img{
-					background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
+					background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_03.png);
 				}
 			}
 			.scenario-outdoor-img{
 				height: 60vw;
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_02.jpg);
 				background-size: 180%;
     			background-position: 10% bottom;
 			}
 			.scenario-indoor-img{
 				height: 83vw;
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_03.jpg);
 				background-size: 177%;
 			    background-position-x: right;
 			    background-repeat: no-repeat;
 			}
 			.scenario-basement-img{
 				height: 72vw;
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_04.jpg);
 				background-size: cover;
 			}
 			.intro-img{
@@ -597,15 +606,15 @@ html{
 						}
 					}
 					.outdoor .img{
-						background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_01.png);
+						background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_01.png);
 						background-size: cover;
 					}
 					.indoor .img{
-						background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_02.png);
+						background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_02.png);
 						background-size: cover;
 					}
 					.basement .img{
-						background-image: url(../../assets/5G_solution_page/5g_nr_solution_3house_icon_03.png);
+						background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_03.png);
 						background-size: cover;
 					}
 					@media screen and (min-width: 992px) {
@@ -628,7 +637,7 @@ html{
 			display: none;
 			.outdoor{
 				width: 100%;
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_02.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_02.jpg);
 				background-size: cover;
 				background-position-x: 110%;
 				background-repeat: no-repeat;
@@ -658,7 +667,7 @@ html{
 			}
 			.indoor{
 				width: 100%;
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_03.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_03.jpg);
 				background-size: cover;
 				background-repeat: no-repeat;
 				height: 50vw;
@@ -682,7 +691,7 @@ html{
 			}
 			.basement{
 				width: 100%;
-				background-image: url(../../assets/5G_solution_page/5g_nr_solution_diagram_04.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_04.jpg);
 				background-size: cover;
 				background-repeat: no-repeat;
 				height: 50vw;
@@ -794,7 +803,7 @@ html{
 				}
 			}//frame
 			@media screen and (min-width: 768px) {
-				background-image: url(../../assets/5G_solution_page/zyxel_lte_bg.jpg);
+				background-image: url(../../../assets/solutions/5G_solution_page/zyxel_lte_bg.jpg);
 				background-size: cover;
 				background-position: right;
 				height: 50vw;
@@ -862,7 +871,7 @@ html{
 							height: 32px;
 							left: calc(50% - 100px);
 							top: 100px;
-							background-image: url(../../assets/5G_solution_page/quick_view.png);
+							background-image: url(../../../assets/solutions/5G_solution_page/quick_view.png);
 							background-size: contain;
 							background-position: center;
 							position: absolute;
