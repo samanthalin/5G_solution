@@ -9,6 +9,12 @@ $(document).ready(function(){
 	    navBar.removeClass("navScrolled");
 	  }
 	});
+	$('.second-nav a[href^="#"]').click(function () {
+      var target = this.hash;
+      $('html, body').stop().animate({
+          'scrollTop': $(target).offset().top - 50
+      }, 900, 'swing');
+    });
 
 	$('.product').click(function(){
 		var wdwidth = $(window).innerWidth();

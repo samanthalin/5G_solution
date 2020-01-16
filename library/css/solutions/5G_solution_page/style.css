@@ -120,6 +120,9 @@ html body nav.second-nav ul li a {
   padding: 5px 10px;
   display: inline-block;
 }
+html body nav.second-nav ul li a:hover {
+  text-decoration: none;
+}
 @media screen and (min-width: 1200px) {
   html body nav.second-nav ul li a {
     font-size: 18px;
