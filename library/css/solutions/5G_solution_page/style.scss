@@ -23,6 +23,7 @@ a, a:hover, a:active, a:focus{
 	text-decoration: none;
 	cursor: pointer;
 }
+
 html{
 	font-size: 16px;
 	font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
@@ -201,9 +202,9 @@ html{
 			}
 			@media screen and (min-width: 768px) {
 				background: rgb(255,255,255); /* Old browsers */
-				background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(220,220,220,1) 100%);
-				background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(220,220,220,1) 100%);
-				background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(220,220,220,1) 100%);
+				background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(238,238,238,1) 100%);
+				background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(238,238,238,1) 100%);
+				background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(238,238,238,1) 100%);
 				@media screen and (min-width: 992px) {
 					padding: 60px 0;
 				}
@@ -337,6 +338,8 @@ html{
 			}
 			.panel{
 				padding: 30px 0 20px 0;
+				border: 0;
+				box-shadow: none;
 				.frame{
 					width: 90%;
 					margin: auto;
@@ -479,7 +482,7 @@ html{
 				.name{
 					color: white;
 					padding: 7px;
-					font-family: 'galano_grotesquesemibold';
+					font-family: 'galano_grotesquesemibold' !important;
 				}
 				i{
 					color: white;
@@ -670,6 +673,7 @@ html{
 				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_03.jpg);
 				background-size: cover;
 				background-repeat: no-repeat;
+				background-position: right;
 				height: 50vw;
 				.frame{
 					width: 90%;
@@ -678,7 +682,7 @@ html{
 					display: flex;
 					align-items: center;
 					.text{
-						width: 40%;
+						width: 33%;
 						img{
 							width: 200px;
 							margin-top: 60px;
@@ -858,18 +862,13 @@ html{
 						.model-name{
 							color: #575757;
 						}
-						&:hover{
-							img{
-								opacity: 0.5;
-							}
-						}
 					}//product
 					.product:hover{
 						&:after{
 							content: ' ';
-							width: 200px;
-							height: 32px;
-							left: calc(50% - 100px);
+							width: 300px;
+							height: 33px;
+							left: calc(50% - 150px);
 							top: 100px;
 							background-image: url(../../../assets/solutions/5G_solution_page/quick_view.png);
 							background-size: contain;
@@ -915,6 +914,8 @@ html{
 		}//section.featured-products
 	}
 	@media screen and (min-width: 1200px) {
-		font-size: 18px;
+		.content, .button{
+			font-size: 18px;
+		}
 	}
 }

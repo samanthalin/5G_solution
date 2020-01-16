@@ -239,9 +239,9 @@ html body section.solution-benifits .frame .box-wrap .left, html body section.so
   html body section.solution-benifits {
     background: white;
     /* Old browsers */
-    background: -webkit-linear-gradient(white 0%, white 70%, gainsboro 100%);
-    background: -o-linear-gradient(white 0%, white 70%, gainsboro 100%);
-    background: linear-gradient(white 0%, white 70%, gainsboro 100%);
+    background: -webkit-linear-gradient(white 0%, white 70%, #eeeeee 100%);
+    background: -o-linear-gradient(white 0%, white 70%, #eeeeee 100%);
+    background: linear-gradient(white 0%, white 70%, #eeeeee 100%);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 992px) {
@@ -398,6 +398,8 @@ html body section.sn-nsa-hidden .switch-wrap ul.switch li .active:after {
 }
 html body section.sn-nsa-hidden .panel {
   padding: 30px 0 20px 0;
+  border: 0;
+  box-shadow: none;
 }
 html body section.sn-nsa-hidden .panel .frame {
   width: 90%;
@@ -568,7 +570,7 @@ html body section.scenarios-mobile .cat .img {
 html body section.scenarios-mobile .cat .name {
   color: white;
   padding: 7px;
-  font-family: "galano_grotesquesemibold";
+  font-family: "galano_grotesquesemibold" !important;
 }
 html body section.scenarios-mobile .cat i {
   color: white;
@@ -770,6 +772,7 @@ html body section.scenarios-panel .indoor {
   background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_03.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right;
   height: 50vw;
 }
 html body section.scenarios-panel .indoor .frame {
@@ -780,7 +783,7 @@ html body section.scenarios-panel .indoor .frame {
   align-items: center;
 }
 html body section.scenarios-panel .indoor .frame .text {
-  width: 40%;
+  width: 33%;
 }
 html body section.scenarios-panel .indoor .frame .text img {
   width: 200px;
@@ -990,14 +993,11 @@ html body section.featured-products .frame .product-wrap a.product .product-name
 html body section.featured-products .frame .product-wrap a.product .model-name {
   color: #575757;
 }
-html body section.featured-products .frame .product-wrap a.product:hover img {
-  opacity: 0.5;
-}
 html body section.featured-products .frame .product-wrap .product:hover:after {
   content: " ";
-  width: 200px;
-  height: 32px;
-  left: calc(50% - 100px);
+  width: 300px;
+  height: 33px;
+  left: calc(50% - 150px);
   top: 100px;
   background-image: url(../../../assets/solutions/5G_solution_page/quick_view.png);
   background-size: contain;
@@ -1047,7 +1047,7 @@ html body section.featured-products .frame a.button:hover {
   }
 }
 @media screen and (min-width: 1200px) {
-  html {
+  html .content, html .button {
     font-size: 18px;
   }
 }

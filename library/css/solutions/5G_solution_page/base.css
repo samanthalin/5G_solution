@@ -7,7 +7,10 @@
   font-family: "galano_grotesquesemibold";
   src: url("fonts/GalanoGrotesque-SemiBold-webfont.woff") format("woff"), url("fonts/GalanoGrotesque-SemiBold-webfont.otf") format("opentype"), url("fonts/GalanoGrotesque-SemiBold-webfont.eot") format("embedded-opentype");
 }
-
+html body{
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
 html body .menu {
   position: fixed;
   width: 300px;
