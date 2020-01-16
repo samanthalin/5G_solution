@@ -26,12 +26,66 @@ a, a:hover, a:active, a:focus {
   cursor: pointer;
 }
 
+p {
+  margin-bottom: auto !important;
+}
+
 html {
   font-size: 16px;
   font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
 }
-html body .modal .modal-body ul li {
+html body .modal .modal-content {
+  border-radius: 0;
+}
+html body .modal .modal-content .modal-body {
+  padding: 20px;
+  border-radius: 0 !important;
+  position: relative;
+}
+html body .modal .modal-content .modal-body button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 40px;
+}
+html body .modal .modal-content .modal-body .text .title {
+  font-family: "galano_grotesquesemibold";
+  font-size: 24px;
+}
+html body .modal .modal-content .modal-body .text .model-name {
+  font-size: 18px;
+  color: #575757;
+  font-family: "galano_grotesqueregular";
+}
+html body .modal .modal-content .modal-body .text ul {
+  padding-left: 20px;
+}
+html body .modal .modal-content .modal-body .text ul li {
   list-style: disc;
+}
+html body .modal .modal-content .modal-body .image img {
+  width: 100%;
+}
+html body .modal .horizontal {
+  width: 73vw;
+  height: 60vh;
+  max-width: 1200px;
+}
+html body .modal .horizontal .modal-body {
+  display: flex;
+  padding: 40px 0 40px 0;
+}
+html body .modal .horizontal .modal-body .text, html body .modal .horizontal .modal-body .image {
+  flex: 1;
+}
+html body .modal .horizontal .modal-body .text {
+  height: 100%;
+  overflow: scroll;
+  padding: 0 15px 0 40px;
+}
+html body .modal .horizontal .modal-body .image {
+  display: flex;
+  align-items: center;
 }
 html body section.banner {
   height: 70vw;
@@ -50,6 +104,7 @@ html body nav.second-nav {
   width: 100%;
   overflow-x: scroll;
   padding: 14px 0;
+  z-index: 1040;
 }
 html body nav.second-nav ul {
   width: max-content;
@@ -1006,6 +1061,9 @@ html body section.featured-products .frame .product-wrap a.product .product-name
 }
 html body section.featured-products .frame .product-wrap a.product .model-name {
   color: #575757;
+}
+html body section.featured-products .frame .product-wrap .product:hover {
+  text-decoration: none;
 }
 html body section.featured-products .frame .product-wrap .product:hover:after {
   content: " ";
