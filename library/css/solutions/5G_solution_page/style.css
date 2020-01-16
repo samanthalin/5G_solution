@@ -30,6 +30,9 @@ html {
   font-size: 16px;
   font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
 }
+html body .modal .modal-body ul li {
+  list-style: disc;
+}
 html body section.banner {
   height: 70vw;
   background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
