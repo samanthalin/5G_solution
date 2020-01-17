@@ -34,13 +34,29 @@ html {
   font-size: 16px;
   font-family: "galano_grotesqueregular", Helvetica, Arial, sans-serif;
 }
+html body .modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+}
 html body .modal .modal-content {
-  border-radius: 0;
+  background-color: white;
+  width: 90%;
+  max-height: 80vh;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 html body .modal .modal-content .modal-body {
   padding: 20px;
   border-radius: 0 !important;
   position: relative;
+  height: 100%;
 }
 html body .modal .modal-content .modal-body button {
   position: absolute;
@@ -50,6 +66,7 @@ html body .modal .modal-content .modal-body button {
   border: 0;
   outline: none;
   cursor: pointer;
+  background: none;
 }
 html body .modal .modal-content .modal-body .text .title {
   font-family: "galano_grotesquesemibold";
@@ -59,36 +76,44 @@ html body .modal .modal-content .modal-body .text .model-name {
   font-size: 18px;
   color: #575757;
   font-family: "galano_grotesqueregular";
+  margin: 15px 0;
 }
 html body .modal .modal-content .modal-body .text ul {
   padding-left: 20px;
 }
 html body .modal .modal-content .modal-body .text ul li {
   list-style: disc;
+  line-height: 22px;
 }
 html body .modal .modal-content .modal-body .image img {
   width: 100%;
 }
-html body .modal .horizontal {
-  width: 73vw;
-  height: 60vh;
-  max-width: 1200px;
+@media screen and (min-width: 768px) {
+  html body .modal .horizontal {
+    width: 73vw;
+    height: 60vh;
+    max-width: 1200px;
+  }
+  html body .modal .horizontal .modal-body {
+    display: flex;
+    padding: 40px 0 40px 10px;
+    overflow: hidden;
+  }
+  html body .modal .horizontal .modal-body .text, html body .modal .horizontal .modal-body .image {
+    flex: 1;
+  }
+  html body .modal .horizontal .modal-body .text {
+    height: 100%;
+    overflow: scroll;
+    padding: 0 15px 0 40px;
+  }
+  html body .modal .horizontal .modal-body .image {
+    display: flex;
+    align-items: center;
+  }
 }
-html body .modal .horizontal .modal-body {
+html body .show {
   display: flex;
-  padding: 40px 0 40px 0;
-}
-html body .modal .horizontal .modal-body .text, html body .modal .horizontal .modal-body .image {
-  flex: 1;
-}
-html body .modal .horizontal .modal-body .text {
-  height: 100%;
-  overflow: scroll;
-  padding: 0 15px 0 40px;
-}
-html body .modal .horizontal .modal-body .image {
-  display: flex;
-  align-items: center;
 }
 html body section.banner {
   height: 70vw;
@@ -1129,6 +1154,11 @@ html body section.featured-products .frame a.button:hover {
   html body section.featured-products {
     padding: 60px 0;
   }
+}
+html .overflow {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   html .content, html .button {
