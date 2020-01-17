@@ -18,23 +18,24 @@ $(document).ready(function(){
     });
 
 	//product popup
-	$('.product').click(function(){
+	$('.product').click(function(e){
+		// e.preventDefault();
 		var wdwidth = $(window).innerWidth();
 		var wdheight = $(window).innerHeight();
 		var direction = wdwidth - wdheight
 		if(direction > 0){
-			$('.modal-content').addClass('horizontal');
+			$('.popup-content').addClass('horizontal');
 		}else{
-			$('.modal-content').removeClass('horizontal');
+			$('.popup-content').removeClass('horizontal');
 		};
 		var model = $(this).attr('data-target');
 		$(model).addClass('show');
-		$('.modal-content').addClass('animated');
+		$('.popup-content').addClass('animated');
 		$('body').addClass('overflow');
 		return false;
 	});
-	$('.modal .close').click(function(){	
-		$('.modal').removeClass('show');
+	$('.popup .cross').click(function(){	
+		$('.popup').removeClass('show');
 		$('body').removeClass('overflow');
 	})
 
