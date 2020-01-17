@@ -20,7 +20,7 @@ li{
 	list-style: none;
 }
 a, a:hover, a:active, a:focus{
-	text-decoration: none;
+	text-decoration: none !important;
 	cursor: pointer;
 }
 p{
@@ -121,6 +121,7 @@ html{
 						display: inline-block;
 						&:hover{
 							text-decoration: none;
+							font-family: 'galano_grotesquesemibold';
 						}
 						@media screen and (min-width: 1200px) {
 							font-size: 18px;
