@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	//product popup
 	$('.product').click(function(e){
-		// e.preventDefault();
+		e.preventDefault();
 		var wdwidth = $(window).innerWidth();
 		var wdheight = $(window).innerHeight();
 		var direction = wdwidth - wdheight
@@ -33,6 +33,7 @@ $(document).ready(function(){
 		$('.popup-content').addClass('animated');
 		$('body').addClass('overflow');
 		return false;
+		
 	});
 	$('.popup .cross').click(function(){	
 		$('.popup').removeClass('show');

@@ -48,21 +48,26 @@ html{
 				height: 90vh;
 				box-shadow:  0 5px 15px rgba(0,0,0,.5);
 				overflow: scroll;
+				padding: 0;
+				button{
+					position: absolute;
+					top: 10px;
+					right: 15px;
+					font-size: 40px;
+					border: 0;
+					outline: none;
+					cursor: pointer;
+					background: none;
+					font-size: 32px;
+				    z-index: 1;
+				    top: 0;
+    				right: 9px;
+				}
 				.popup-body{
 					padding: 20px;
 					border-radius: 0 !important;
 					position: relative;
 					height: 100%;
-					button{
-						position: absolute;
-						top: 10px;
-						right: 15px;
-						font-size: 40px;
-						border: 0;
-						outline: none;
-						cursor: pointer;
-						background: none;
-					}
 					.text{
 						.title{
 							font-family: 'galano_grotesquesemibold';
@@ -159,10 +164,10 @@ html{
 					}
 				}
 			}
-			@media screen and (min-width: 958px) {
-				overflow: hidden;
-				@media screen and (min-width: 992px) {
-					padding: 18px 0;	
+			@media screen and (min-width: 992px) {
+				padding: 18px 0;
+				@media screen and (min-width: 1043px) {
+					overflow: hidden;	
 				}	
 			}
 		}
@@ -939,7 +944,7 @@ html{
 				}
 				.product-wrap{
 					width: 100%;
-					a.product{
+					.product{
 						display: inline-block;
 						margin-top: 30px;
 						position: relative;

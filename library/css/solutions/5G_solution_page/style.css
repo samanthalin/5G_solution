@@ -52,14 +52,9 @@ html body .popup .popup-content {
   height: 90vh;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   overflow: scroll;
+  padding: 0;
 }
-html body .popup .popup-content .popup-body {
-  padding: 20px;
-  border-radius: 0 !important;
-  position: relative;
-  height: 100%;
-}
-html body .popup .popup-content .popup-body button {
+html body .popup .popup-content button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -68,6 +63,16 @@ html body .popup .popup-content .popup-body button {
   outline: none;
   cursor: pointer;
   background: none;
+  font-size: 32px;
+  z-index: 1;
+  top: 0;
+  right: 9px;
+}
+html body .popup .popup-content .popup-body {
+  padding: 20px;
+  border-radius: 0 !important;
+  position: relative;
+  height: 100%;
 }
 html body .popup .popup-content .popup-body .text .title {
   font-family: "galano_grotesquesemibold";
@@ -162,14 +167,14 @@ html body nav.second-nav ul li .active {
   background-color: #00b2ff;
   color: black;
 }
-@media screen and (min-width: 958px) {
-  html body nav.second-nav {
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 958px) and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   html body nav.second-nav {
     padding: 18px 0;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1043px) {
+  html body nav.second-nav {
+    overflow: hidden;
   }
 }
 html body .navScrolled {
@@ -1069,12 +1074,12 @@ html body section.featured-products .frame p.title {
 html body section.featured-products .frame .product-wrap {
   width: 100%;
 }
-html body section.featured-products .frame .product-wrap a.product {
+html body section.featured-products .frame .product-wrap .product {
   display: inline-block;
   margin-top: 30px;
   position: relative;
 }
-html body section.featured-products .frame .product-wrap a.product .product-img {
+html body section.featured-products .frame .product-wrap .product .product-img {
   width: 220px;
   height: 220px;
   overflow: hidden;
@@ -1082,22 +1087,22 @@ html body section.featured-products .frame .product-wrap a.product .product-img 
   margin-bottom: 10px;
   overflow: hidden;
 }
-html body section.featured-products .frame .product-wrap a.product .product-img img {
+html body section.featured-products .frame .product-wrap .product .product-img img {
   width: 100%;
   display: block;
   transition: all 0.2s ease;
 }
 @media screen and (min-width: 1200px) {
-  html body section.featured-products .frame .product-wrap a.product .product-img {
+  html body section.featured-products .frame .product-wrap .product .product-img {
     width: 300px;
     height: 300px;
   }
 }
-html body section.featured-products .frame .product-wrap a.product .product-name {
+html body section.featured-products .frame .product-wrap .product .product-name {
   color: #575757;
   font-family: "galano_grotesquesemibold";
 }
-html body section.featured-products .frame .product-wrap a.product .model-name {
+html body section.featured-products .frame .product-wrap .product .model-name {
   color: #575757;
 }
 html body section.featured-products .frame .product-wrap .product:hover {
