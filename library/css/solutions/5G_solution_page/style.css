@@ -133,7 +133,12 @@ html body nav.second-nav ul li .active {
   background-color: #00b2ff;
   color: black;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 958px) {
+  html body nav.second-nav {
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 958px) and (min-width: 992px) {
   html body nav.second-nav {
     padding: 18px 0;
   }
