@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 	//second-navbar
 	var navBar = $(".second-nav");
 	var bnHeight = $(".banner").height();
