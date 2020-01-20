@@ -15,6 +15,8 @@ $(document).ready(function(){
       $('html, body').stop().animate({
           'scrollTop': $(target).offset().top - 50
       }, 900, 'swing');
+      $('.active').removeClass('active');
+      $(this).addClass('active');
     });
 
 	//product popup

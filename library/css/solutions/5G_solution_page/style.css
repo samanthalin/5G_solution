@@ -51,7 +51,6 @@ html body .popup .popup-content {
   width: 90%;
   height: 90vh;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  overflow: scroll;
   padding: 0;
 }
 html body .popup .popup-content button {
@@ -110,7 +109,7 @@ html body .popup .popup-content .popup-body .image img {
   }
   html body .popup .horizontal .popup-body .text {
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 0 15px 0 40px;
   }
   html body .popup .horizontal .popup-body .image {
