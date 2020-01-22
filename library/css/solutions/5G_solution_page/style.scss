@@ -123,13 +123,15 @@ html{
 		}
 						
 		section.banner{
-			height: 70vw;
+			height: 50vh;
 			background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
 			background-size: cover;
 			background-position: center;
 			@media screen and (min-width: 768px) {
 				background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_1920x982_191226.jpg);
-				height: 50vw;
+				@media screen and (min-width: 992px) {
+					height: calc(95vh - 165px);
+				}
 			}
 		}
 		nav.second-nav{
@@ -242,9 +244,15 @@ html{
 								color: black;
 								font-size: 20px;
 								text-align: left;
-								@media screen and (min-width: 1200px) {
-									font-size: 28px;
-									padding: 10px 0;
+								@media screen and (min-width: 992px) {
+									font-size: 26px;
+									@media screen and (min-width: 1200px) {
+										font-size: 31px;
+										padding: 10px 0;
+										@media screen and (min-width: 1400px){
+											font-size: 37px;
+										}
+									}
 								}
 							}
 							.content{

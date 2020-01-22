@@ -121,7 +121,7 @@ html body .show {
   display: flex !important;
 }
 html body section.banner {
-  height: 70vw;
+  height: 50vh;
   background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_640x500_191226.jpg);
   background-size: cover;
   background-position: center;
@@ -129,7 +129,11 @@ html body section.banner {
 @media screen and (min-width: 768px) {
   html body section.banner {
     background-image: url(../../../assets/solutions/5G_solution_page/5g_homepage_banner_1920x982_191226.jpg);
-    height: 50vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  html body section.banner {
+    height: calc(95vh - 165px);
   }
 }
 html body nav.second-nav {
@@ -268,10 +272,20 @@ html body section.solution-benifits .frame .box-wrap .box .text .title {
   font-size: 20px;
   text-align: left;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   html body section.solution-benifits .frame .box-wrap .box .text .title {
-    font-size: 28px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  html body section.solution-benifits .frame .box-wrap .box .text .title {
+    font-size: 31px;
     padding: 10px 0;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
+  html body section.solution-benifits .frame .box-wrap .box .text .title {
+    font-size: 37px;
   }
 }
 html body section.solution-benifits .frame .box-wrap .box .text .content {
