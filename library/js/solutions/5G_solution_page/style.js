@@ -19,8 +19,7 @@ $(document).ready(function(){
     });
 
 	//product popup
-	$('.product').click(function(e){
-		e.preventDefault();
+	$('#featured-products .product').click(function(){
 		var wdwidth = $(window).innerWidth();
 		var wdheight = $(window).innerHeight();
 		var direction = wdwidth - wdheight
@@ -33,12 +32,16 @@ $(document).ready(function(){
 		$(model).addClass('show');
 		$('.popup-content').addClass('animated');
 		$('body').addClass('overflow');
-		return false;
-		
+		$('html, body').animate({
+		    scrollTop: ($('#featured-products').offset().top - 50)
+		}, 0);
 	});
 	$('.popup .cross').click(function(){	
 		$('.popup').removeClass('show');
 		$('body').removeClass('overflow');
+		$('html, body').animate({
+		    scrollTop: ($('#featured-products').offset().top - 50)
+		}, 0);
 	})
 
 	//sections featured
