@@ -12,11 +12,11 @@
 	<link rel="stylesheet" href="library/css/solutions/5G_solution_page/fontawesome/all.css">
 	<link rel="stylesheet" href="library/css/solutions/5G_solution_page/animate.css">
 	<link rel="stylesheet" href="library/css/solutions/5G_solution_page/style.css">
-	<link rel="stylesheet" href="library/css/solutions/5G_solution_page/slick.css">
+	<!-- <link rel="stylesheet" href="library/css/solutions/5G_solution_page/slick.css"> -->
 	<link rel="stylesheet" href="library/css/solutions/5G_solution_page/slick-theme.css">
 	<script src="library/js/solutions/5G_solution_page/jquery-3.4.1.min.js"></script>
-	<script src="library/js/solutions/5G_solution_page/slick.min.js"></script>
-	<script src="library/js/solutions/5G_solution_page/style.js"></script>
+	<!-- <script src="library/js/solutions/5G_solution_page/slick.min.js"></script>
+	<script src="library/js/solutions/5G_solution_page/style.js"></script> -->
 </head>
 <body>
 	<!-- popup -->
@@ -272,27 +272,27 @@
 		<div class="frame">
 			<p class="title">5G NR Scenarios</p>
 			<div class="cat-wrap slider-nav">
-				<div href="#" class="cat outdoor">
+				<a href="#outdoor" class="cat outdoor">
 					<div class="img"></div>
 					<div class="name">Outdoor deployment</div>
 					<i class="fas fa-chevron-down"></i>
-				</div>
-				<div href="#" class="cat indoor">
+				</a>
+				<a href="#indoor" class="cat indoor">
 					<div class="img"></div>
 					<div class="name">Indoor deployment</div>
 					<i class="fas fa-chevron-down"></i>
-				</div>
-				<div href="#" class="cat basement">
+				</a>
+				<a href="#basement" class="cat basement">
 					<div class="img"></div>
 					<div class="name">Indoor deployment with<br>basement facility</div>
 					<i class="fas fa-chevron-down"></i>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>
 
 	<section class="scenarios-panel slider-for">
-		<div class="outdoor">
+		<div class="outdoor scene fadeIn active" id="outdoor">
 			<div class="frame">
 				<div class="text">
 					<p class="title">Outdoor deployment </p>
@@ -301,7 +301,7 @@
 				</div>
 			</div>	
 		</div>
-		<div class="indoor">
+		<div class="indoor scene fadeIn" id="indoor">
 			<div class="frame">
 				<div class="text">
 					<p class="title">Indoor deployment</p>
@@ -310,7 +310,7 @@
 				</div>
 			</div>	
 		</div>
-		<div class="basement">
+		<div class="basement scene fadeIn" id="basement">
 			<div class="frame">
 				<div class="text">
 					<img src="library/assets/solutions/5G_solution_page/5g_nr_solution_intro.png" alt="" class="intro-img">

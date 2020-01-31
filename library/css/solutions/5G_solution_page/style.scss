@@ -96,7 +96,7 @@ html{
 			.horizontal{
 				@media screen and (min-width: 768px) {
 					width: 73vw;
-					height: 60vh;
+					height: 70vh;
 					max-width: 1200px;
 					.popup-body{
 						display: flex;
@@ -114,7 +114,10 @@ html{
 							display: flex;
 							align-items: center;
 						}
-					}	
+					}
+					@media screen and (min-width: 1400px){
+						height: 60vh;
+					}
 				}	
 			}
 		}
@@ -467,17 +470,34 @@ html{
 						font-family: 'galano_grotesquesemibold';
 						font-size: 26px;
 						@media screen and (min-width: 1200px) {
-							font-size: 38px;
+							font-size: 30px;
+							@media screen and (min-width: 1400px){
+								font-size: 37px;
+							}
 						}
 					}
 					img{
 						width: 100%;
+						max-width: 800px;
+						display: block;
+						margin: auto;
+						@media screen and (min-width: 1400px){
+							max-width: initial;
+						}
 					}
 					img.intro{
 						@media screen and (min-width: 768px) {
 							width: 70%;
-							max-width: 600px;
+							max-width: 450px;
 							margin-top: 30px;
+							margin: 0;
+							margin-top: 35px;
+							margin-left: calc(50% - 400px);
+							@media screen and (min-width: 1400px){
+								max-width: 600px;
+								margin-top: 60px;
+								margin-left: 0;
+							}
 						}
 					}
 					.structure-img{
@@ -534,7 +554,7 @@ html{
 						width: 100%;
 						margin-top: 15px;
 						display: none;
-						max-width: 550px;
+						max-width: 350px;
 						@media screen and (min-width: 768px) {
 							display: block;
 							@media screen and (min-width: 992px) {
@@ -542,6 +562,9 @@ html{
 								@media screen and (min-width: 1200px){
 									margin-top: 8vw;
 									margin-left: 0;
+									@media screen and (min-width: 1400px){
+										max-width: 550px;
+									}
 								}
 							}	
 								
@@ -675,6 +698,8 @@ html{
 				}
 				.cat-wrap{
 					margin-top: 25px;
+					display: flex;
+    				justify-content: space-between;
 					.cat{
 						text-align: center;
 						outline: none;
@@ -684,12 +709,17 @@ html{
 							height: 150px;
 							border: 3px solid white;
 							margin: auto;
-							@media screen and (min-width: 1200px) {
-								width: 24vw;
-								height: 23vw;
-								max-width: 352px;
-								max-height: 325px;
-							}
+							@media screen and (min-width: 1200px){
+								width: 205px;
+								height: 205px;
+								@media screen and (min-width: 1400px) {
+									width: 24vw;
+									height: 23vw;
+									max-width: 352px;
+									max-height: 325px;
+								}
+							}	
+								
 						}
 						.name{
 							color: white;
@@ -839,11 +869,17 @@ html{
 						p.content{
 							margin-top: 5px;
 						}
-						@media screen and (min-width: 1400px) {
+						@media screen and (min-width: 1200px) {
 							padding-bottom: 10%;
 						}
 					}
 				}
+			}
+			.scene{
+				display: none;
+			}
+			.active{
+				display: block;
 			}
 			p.title{
 				font-family: 'galano_grotesquesemibold';

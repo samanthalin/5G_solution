@@ -96,7 +96,7 @@ html body .popup .popup-content .popup-body .image img {
 @media screen and (min-width: 768px) {
   html body .popup .horizontal {
     width: 73vw;
-    height: 60vh;
+    height: 70vh;
     max-width: 1200px;
   }
   html body .popup .horizontal .popup-body {
@@ -115,6 +115,11 @@ html body .popup .popup-content .popup-body .image img {
   html body .popup .horizontal .popup-body .image {
     display: flex;
     align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1400px) {
+  html body .popup .horizontal {
+    height: 60vh;
   }
 }
 html body .show {
@@ -539,17 +544,40 @@ html body section.sn-nsa-hidden .panel .frame .title {
 }
 @media screen and (min-width: 1200px) {
   html body section.sn-nsa-hidden .panel .frame .title {
-    font-size: 38px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1400px) {
+  html body section.sn-nsa-hidden .panel .frame .title {
+    font-size: 37px;
   }
 }
 html body section.sn-nsa-hidden .panel .frame img {
   width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
+@media screen and (min-width: 1400px) {
+  html body section.sn-nsa-hidden .panel .frame img {
+    max-width: initial;
+  }
 }
 @media screen and (min-width: 768px) {
   html body section.sn-nsa-hidden .panel .frame img.intro {
     width: 70%;
-    max-width: 600px;
+    max-width: 450px;
     margin-top: 30px;
+    margin: 0;
+    margin-top: 35px;
+    margin-left: calc(50% - 400px);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1400px) {
+  html body section.sn-nsa-hidden .panel .frame img.intro {
+    max-width: 600px;
+    margin-top: 60px;
+    margin-left: 0;
   }
 }
 html body section.sn-nsa-hidden .panel .frame .structure-img {
@@ -616,7 +644,7 @@ html body section.nr-solution .frame .text img.intro-img {
   width: 100%;
   margin-top: 15px;
   display: none;
-  max-width: 550px;
+  max-width: 350px;
 }
 @media screen and (min-width: 768px) {
   html body section.nr-solution .frame .text img.intro-img {
@@ -632,6 +660,11 @@ html body section.nr-solution .frame .text img.intro-img {
   html body section.nr-solution .frame .text img.intro-img {
     margin-top: 8vw;
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
+  html body section.nr-solution .frame .text img.intro-img {
+    max-width: 550px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -773,6 +806,8 @@ html body section.scenarios .frame .title {
 }
 html body section.scenarios .frame .cat-wrap {
   margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 html body section.scenarios .frame .cat-wrap .cat {
   text-align: center;
@@ -786,6 +821,12 @@ html body section.scenarios .frame .cat-wrap .cat .img {
   margin: auto;
 }
 @media screen and (min-width: 1200px) {
+  html body section.scenarios .frame .cat-wrap .cat .img {
+    width: 205px;
+    height: 205px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1400px) {
   html body section.scenarios .frame .cat-wrap .cat .img {
     width: 24vw;
     height: 23vw;
@@ -953,10 +994,16 @@ html body section.scenarios-panel .basement .frame .text img {
 html body section.scenarios-panel .basement .frame .text p.content {
   margin-top: 5px;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   html body section.scenarios-panel .basement .frame .text {
     padding-bottom: 10%;
   }
+}
+html body section.scenarios-panel .scene {
+  display: none;
+}
+html body section.scenarios-panel .active {
+  display: block;
 }
 html body section.scenarios-panel p.title {
   font-family: "galano_grotesquesemibold";
