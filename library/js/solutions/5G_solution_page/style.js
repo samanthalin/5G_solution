@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	//second-navbar
-	var navBar = $(".second-nav");
-	var bnHeight = $(".banner").height();
-	$(window).scroll(function() {
-	  if( $(this).scrollTop() > bnHeight) {
-	    navBar.addClass("navScrolled");
-	  } else {
-	    navBar.removeClass("navScrolled");
-	  }
+	var nav = $('.second-nav');
+	$(window).scroll(function () {
+		var a = $(window).scrollTop();
+		if (a >= window.innerHeight) {
+			nav.addClass("navScrolled")
+		} else {
+			nav.removeClass("navScrolled")
+		}
 	});
 	$('.second-nav a[href^="#"]').click(function () {
       var target = this.hash;
