@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var navBar = $(".second-nav");
 	var bnHeight = $(".banner").height();
 	$(window).scroll(function() {
-	  if( $(this).scrollTop() > bnHeight + 50) {
+	  if( $(this).scrollTop() > bnHeight) {
 	    navBar.addClass("navScrolled");
 	  } else {
 	    navBar.removeClass("navScrolled");

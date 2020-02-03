@@ -196,16 +196,19 @@ html{
 					@media screen and (min-width: 1200px) {
 						font-size: 32px;
 						@media screen and (min-width: 1400px) {
-							font-size: 42px;
+							font-size: 36px;
 						}
 					}
 				}
 				.content{
 					color: #575757;
 					margin-top: 15px;
+					line-height: 22px;
 					@media screen and (min-width: 992px) {
 						margin-top: 25px;
-						line-height: 22px;
+						@media screen and (min-width: 1200px){
+							line-height: 25px;
+						}
 					}
 				}
 			}
@@ -229,10 +232,6 @@ html{
 					font-size: 28px;
 					@media screen and (min-width: 992px) {
 						font-size: 36px;
-						@media screen and (min-width: 1200px) {
-							font-size: 52px;
-							padding: 20px 0;
-						}
 					}
 				}
 				.box-wrap{
@@ -249,20 +248,14 @@ html{
 								font-size: 20px;
 								text-align: left;
 								@media screen and (min-width: 992px) {
-									font-size: 26px;
-									@media screen and (min-width: 1200px) {
-										font-size: 31px;
-										padding: 10px 0;
-										@media screen and (min-width: 1400px){
-											font-size: 37px;
-										}
-									}
+									font-size: 28px;
 								}
 							}
 							.content{
 								margin-top: 15px;
+								line-height: 22px;
 								@media screen and (min-width: 1200px) {
-									line-height: 22px;
+									line-height: 25px;
 								}
 							}
 						}
@@ -357,6 +350,10 @@ html{
 					}
 					.content{
 						margin-top: 15px;
+						line-height: 22px;
+						@media screen and (min-width: 1200px) {
+							line-height: 25px;
+						}
 					}
 					.button{
 						background-color: #00b2ff;
@@ -436,7 +433,8 @@ html{
 							padding: 10px 0;
 							position: relative;
 							@media screen and (min-width: 1200px) {
-								font-size: 24px;
+								font-size: 20px;
+								padding: 7px 0;
 							}
 						}
 						.active{
@@ -464,7 +462,7 @@ html{
 				.frame{
 					width: 90%;
 					margin: auto;
-					max-width: 1200px;
+					max-width: 1060px;
 					margin: auto;
 					.title{
 						color: #575757;
@@ -472,9 +470,6 @@ html{
 						font-size: 26px;
 						@media screen and (min-width: 1200px) {
 							font-size: 28px;
-							@media screen and (min-width: 1400px){
-								font-size: 37px;
-							}
 						}
 					}
 					img{
@@ -493,7 +488,7 @@ html{
 							margin-top: 30px;
 							margin: 0;
 							margin-top: 35px;
-							margin-left: calc(50% - 400px);
+							// margin-left: calc(50% - 400px);
 							@media screen and (min-width: 1400px){
 								max-width: 600px;
 								margin-top: 60px;
@@ -504,12 +499,15 @@ html{
 					.structure-img{
 						margin-top: 15px;
 						@media screen and (min-width: 1200px) {
-							margin-top: 55px;
+							margin-top: 30px;
 						}
+					}
+					@media screen and (min-width: 1200px) {
+						width: 100%;
 					}
 				}
 				@media screen and (min-width: 1200px) {
-					padding: 60px 0;
+					padding: 30px 0;
 				}
 			}//panel
 		}//sn-nsa-hidden
@@ -549,6 +547,7 @@ html{
 						margin-top: 15px;
 						@media screen and (min-width: 1200px) {
     						margin-top: 24px;
+    						line-height: 25px;
     					}
 					}
 					img.intro-img{
@@ -692,9 +691,6 @@ html{
 					font-size: 28px;
 					@media screen and (min-width: 992px) {
 						font-size: 36px;
-						@media screen and (min-width: 1200px) {
-							font-size: 52px;
-						}
 					}	
 				}
 				.cat-wrap{
@@ -893,6 +889,10 @@ html{
 			}
 			p.content{
 				margin-top: 25px;
+				line-height: 22px;
+				@media screen and (min-width: 992px) {
+					line-height: 25px;
+				}
 			}
 			@media screen and (min-width: 768px) {
 				display: block;
@@ -944,8 +944,10 @@ html{
 					}
 					.content{
 						margin-top: 15px;
+						line-height: 22px;
 						@media screen and (min-width: 1200px) {
 							margin-top: 20px;
+							line-height: 25px;
 						}
 					}
 					@media screen and (min-width: 768px) {
@@ -983,9 +985,6 @@ html{
 				    font-size: 24px;
 				    @media screen and (min-width: 992px) {
 				    	font-size: 36px;
-				    	@media screen and (min-width: 1200px) {
-					    	font-size: 52px;
-					    }
 				    }
 				}
 				.product-wrap{

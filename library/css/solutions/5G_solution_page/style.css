@@ -212,17 +212,22 @@ html body section.brief .frame .title {
 }
 @media screen and (min-width: 1200px) and (min-width: 1400px) {
   html body section.brief .frame .title {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 html body section.brief .frame .content {
   color: #575757;
   margin-top: 15px;
+  line-height: 22px;
 }
 @media screen and (min-width: 992px) {
   html body section.brief .frame .content {
     margin-top: 25px;
-    line-height: 22px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  html body section.brief .frame .content {
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -254,12 +259,6 @@ html body section.solution-benifits .frame .title {
     font-size: 36px;
   }
 }
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  html body section.solution-benifits .frame .title {
-    font-size: 52px;
-    padding: 20px 0;
-  }
-}
 html body section.solution-benifits .frame .box-wrap {
   margin-top: 15px;
 }
@@ -279,26 +278,16 @@ html body section.solution-benifits .frame .box-wrap .box .text .title {
 }
 @media screen and (min-width: 992px) {
   html body section.solution-benifits .frame .box-wrap .box .text .title {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  html body section.solution-benifits .frame .box-wrap .box .text .title {
-    font-size: 31px;
-    padding: 10px 0;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
-  html body section.solution-benifits .frame .box-wrap .box .text .title {
-    font-size: 37px;
+    font-size: 28px;
   }
 }
 html body section.solution-benifits .frame .box-wrap .box .text .content {
   margin-top: 15px;
+  line-height: 22px;
 }
 @media screen and (min-width: 1200px) {
   html body section.solution-benifits .frame .box-wrap .box .text .content {
-    line-height: 22px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -412,6 +401,12 @@ html body section.sn-nsa .frame .text .title {
 }
 html body section.sn-nsa .frame .text .content {
   margin-top: 15px;
+  line-height: 22px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa .frame .text .content {
+    line-height: 25px;
+  }
 }
 html body section.sn-nsa .frame .text .button {
   background-color: #00b2ff;
@@ -508,7 +503,8 @@ html body section.sn-nsa-hidden .switch-wrap ul.switch li a {
 }
 @media screen and (min-width: 1200px) {
   html body section.sn-nsa-hidden .switch-wrap ul.switch li a {
-    font-size: 24px;
+    font-size: 20px;
+    padding: 7px 0;
   }
 }
 html body section.sn-nsa-hidden .switch-wrap ul.switch li .active {
@@ -534,7 +530,7 @@ html body section.sn-nsa-hidden .panel {
 html body section.sn-nsa-hidden .panel .frame {
   width: 90%;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1060px;
   margin: auto;
 }
 html body section.sn-nsa-hidden .panel .frame .title {
@@ -545,11 +541,6 @@ html body section.sn-nsa-hidden .panel .frame .title {
 @media screen and (min-width: 1200px) {
   html body section.sn-nsa-hidden .panel .frame .title {
     font-size: 28px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 1400px) {
-  html body section.sn-nsa-hidden .panel .frame .title {
-    font-size: 37px;
   }
 }
 html body section.sn-nsa-hidden .panel .frame img {
@@ -570,7 +561,6 @@ html body section.sn-nsa-hidden .panel .frame img {
     margin-top: 30px;
     margin: 0;
     margin-top: 35px;
-    margin-left: calc(50% - 400px);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1400px) {
@@ -585,12 +575,17 @@ html body section.sn-nsa-hidden .panel .frame .structure-img {
 }
 @media screen and (min-width: 1200px) {
   html body section.sn-nsa-hidden .panel .frame .structure-img {
-    margin-top: 55px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html body section.sn-nsa-hidden .panel .frame {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   html body section.sn-nsa-hidden .panel {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 }
 html body section.nr-solution {
@@ -638,6 +633,7 @@ html body section.nr-solution .frame .text .content {
 @media screen and (min-width: 1200px) {
   html body section.nr-solution .frame .text .content {
     margin-top: 24px;
+    line-height: 25px;
   }
 }
 html body section.nr-solution .frame .text img.intro-img {
@@ -797,11 +793,6 @@ html body section.scenarios .frame .title {
 @media screen and (min-width: 992px) {
   html body section.scenarios .frame .title {
     font-size: 36px;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  html body section.scenarios .frame .title {
-    font-size: 52px;
   }
 }
 html body section.scenarios .frame .cat-wrap {
@@ -1018,6 +1009,12 @@ html body section.scenarios-panel p.title {
 }
 html body section.scenarios-panel p.content {
   margin-top: 25px;
+  line-height: 22px;
+}
+@media screen and (min-width: 992px) {
+  html body section.scenarios-panel p.content {
+    line-height: 25px;
+  }
 }
 @media screen and (min-width: 768px) {
   html body section.scenarios-panel {
@@ -1081,10 +1078,12 @@ html body section.zyxel-lte .frame .text .title {
 }
 html body section.zyxel-lte .frame .text .content {
   margin-top: 15px;
+  line-height: 22px;
 }
 @media screen and (min-width: 1200px) {
   html body section.zyxel-lte .frame .text .content {
     margin-top: 20px;
+    line-height: 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1126,11 +1125,6 @@ html body section.featured-products .frame p.title {
 @media screen and (min-width: 992px) {
   html body section.featured-products .frame p.title {
     font-size: 36px;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  html body section.featured-products .frame p.title {
-    font-size: 52px;
   }
 }
 html body section.featured-products .frame .product-wrap {
@@ -1234,4 +1228,4 @@ html .overflow {
   }
 }
 
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=style.css.map */
