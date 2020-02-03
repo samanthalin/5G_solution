@@ -13,6 +13,7 @@
     transform: translateY(0%);
   }
 }
+
 #solution-title{
 	display: none;
 }
@@ -700,6 +701,8 @@ html{
 					margin-top: 25px;
 					display: flex;
     				justify-content: space-between;
+    				max-width: 1440px;
+    				margin: auto;
 					.cat{
 						text-align: center;
 						outline: none;
@@ -724,7 +727,7 @@ html{
 						.name{
 							color: white;
 							padding: 7px;
-							font-family: 'galano_grotesquesemibold';
+							font-family: 'galano_grotesquesemibold' !important;
 							@media screen and (min-width: 1200px) {
 								font-size: 24px;
 							}
@@ -747,7 +750,7 @@ html{
 							}
 						}
 					}
-					.slick-current{
+					.active{
 						.img{
 							border-color: #ffc800;
 						}

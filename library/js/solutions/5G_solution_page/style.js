@@ -61,6 +61,8 @@ $(document).ready(function(){
 		return false;
 	});
 	$('.scenarios a').click(function() {
+		$('.scenarios a').removeClass('active');
+		$(this).addClass('active');
 		$('.scenarios-panel .scene').removeClass('active');
 		var href = $(this).attr('href');
 		$(href).addClass('active');

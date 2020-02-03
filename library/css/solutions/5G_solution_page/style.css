@@ -808,6 +808,8 @@ html body section.scenarios .frame .cat-wrap {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
 }
 html body section.scenarios .frame .cat-wrap .cat {
   text-align: center;
@@ -837,7 +839,7 @@ html body section.scenarios .frame .cat-wrap .cat .img {
 html body section.scenarios .frame .cat-wrap .cat .name {
   color: white;
   padding: 7px;
-  font-family: "galano_grotesquesemibold";
+  font-family: "galano_grotesquesemibold" !important;
 }
 @media screen and (min-width: 1200px) {
   html body section.scenarios .frame .cat-wrap .cat .name {
@@ -861,10 +863,10 @@ html body section.scenarios .frame .cat-wrap .cat:hover .name, html body section
   color: #ffc800;
   transition: all 0.2s ease;
 }
-html body section.scenarios .frame .cat-wrap .slick-current .img {
+html body section.scenarios .frame .cat-wrap .active .img {
   border-color: #ffc800;
 }
-html body section.scenarios .frame .cat-wrap .slick-current .name, html body section.scenarios .frame .cat-wrap .slick-current i {
+html body section.scenarios .frame .cat-wrap .active .name, html body section.scenarios .frame .cat-wrap .active i {
   color: #ffc800;
 }
 html body section.scenarios .frame .cat-wrap .outdoor .img {
@@ -1232,4 +1234,4 @@ html .overflow {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Style.css.map */
