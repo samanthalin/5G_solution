@@ -462,8 +462,7 @@ html{
 				.frame{
 					width: 90%;
 					margin: auto;
-					max-width: 1060px;
-					margin: auto;
+					max-width: 980px;
 					.title{
 						color: #575757;
 						font-family: 'galano_grotesquesemibold';
@@ -474,7 +473,7 @@ html{
 					}
 					img{
 						width: 100%;
-						max-width: 800px;
+						max-width: 740px;
 						display: block;
 						margin: auto;
 						@media screen and (min-width: 1400px){
@@ -505,7 +504,7 @@ html{
 					@media screen and (min-width: 1200px) {
 						width: 100%;
 					}
-				}
+				}//frame
 				@media screen and (min-width: 1200px) {
 					padding: 30px 0;
 				}

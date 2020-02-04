@@ -530,8 +530,7 @@ html body section.sn-nsa-hidden .panel {
 html body section.sn-nsa-hidden .panel .frame {
   width: 90%;
   margin: auto;
-  max-width: 1060px;
-  margin: auto;
+  max-width: 980px;
 }
 html body section.sn-nsa-hidden .panel .frame .title {
   color: #575757;
@@ -545,7 +544,7 @@ html body section.sn-nsa-hidden .panel .frame .title {
 }
 html body section.sn-nsa-hidden .panel .frame img {
   width: 100%;
-  max-width: 800px;
+  max-width: 740px;
   display: block;
   margin: auto;
 }
