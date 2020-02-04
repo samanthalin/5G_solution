@@ -126,9 +126,13 @@ html{
 		#contactForm{
 			.popup-content{
 				overflow-y: scroll;
-				height: max-content;
-				max-height: 90vh;
 				max-width: 730px;
+				@media screen and (min-width: 778px) {
+					height: 640px;
+				}
+				.popup-body{
+					padding-bottom: 0;
+				}
 			}
 		}
 		.show{

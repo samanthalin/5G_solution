@@ -125,9 +125,15 @@ html body .popup .popup-content .popup-body .image img {
 }
 html body #contactForm .popup-content {
   overflow-y: scroll;
-  height: max-content;
-  max-height: 90vh;
   max-width: 730px;
+}
+@media screen and (min-width: 778px) {
+  html body #contactForm .popup-content {
+    height: 640px;
+  }
+}
+html body #contactForm .popup-content .popup-body {
+  padding-bottom: 0;
 }
 html body .show {
   display: flex !important;
