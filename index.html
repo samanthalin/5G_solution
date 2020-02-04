@@ -15,11 +15,18 @@
 	<!-- <link rel="stylesheet" href="library/css/solutions/5G_solution_page/slick.css"> -->
 	<!-- <link rel="stylesheet" href="library/css/solutions/5G_solution_page/slick-theme.css"> -->
 	<script src="library/js/solutions/5G_solution_page/jquery-3.4.1.min.js"></script>
-s
 	<script src="library/js/solutions/5G_solution_page/style.js"></script>
 </head>
 <body>
 	<!-- popup -->
+	<div class="popup" id="contactForm">
+		<div class="popup-content slideInDown faster">
+			<button type="button" class="close">×</button>
+			<div class="popup-body">
+				<iframe src="https://www.zyxel.com/form/5G_solution_Contact_Form_for_SP.shtml" width="100%" height="100%" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
 	<div class="popup" id="nr7101">
 		<div class="popup-content slideInDown faster">
 			<button type="button" class="cross">×</button>
@@ -130,7 +137,7 @@ s
 			<li><a href="#nr-mesh">5G NR with Mesh</a></li>
 			<li><a href="#lte-ally-app">LTE Ally App</a></li>
 			<li><a href="#featured-products">Featured Products</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><button class="contact-form">Contact</button></li>
 		</ul>
 	</nav>
 	
@@ -365,7 +372,7 @@ s
 					<p class="model-name">NR2101</p>
 				</a>
 			</div>
-			<a target="_blank" href="" class="button">Contact us for more information</a>
+			<a href="#featured-products" class="button">Contact us for more information</a>
 		</div>
 	</section>
 

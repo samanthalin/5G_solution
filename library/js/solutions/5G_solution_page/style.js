@@ -17,6 +17,16 @@ $(document).ready(function(){
       $('.active').removeClass('active');
       $(this).addClass('active');
     });
+    $('.second-nav .contact-form').click(function(){
+		$('html, body').animate({
+		    scrollTop: ($('#featured-products').offset().top - 50)
+		}, 0);
+		$('#contactForm').addClass('show');
+		$('#contactForm .popup-content').addClass('animated');
+		$('body').addClass('overflow');
+		$('.second-nav .active').removeClass('active');
+      	$(this).addClass('active');
+	});
 
 	//product popup
 	$('#featured-products .product').click(function(){
@@ -43,6 +53,24 @@ $(document).ready(function(){
 		    scrollTop: ($('#featured-products').offset().top - 50)
 		}, 0);
 	})
+
+	//contact popup
+	$('.featured-products .button').click(function(){
+		$('#contactForm').addClass('show');
+		$('.popup-content').addClass('animated');
+		$('body').addClass('overflow');
+		$('html, body').animate({
+		    scrollTop: ($('#featured-products').offset().top - 50)
+		}, 0);
+	});
+	$('#contactForm .close').click(function(){	
+		$('#contactForm').removeClass('show');
+		$('body').removeClass('overflow');
+		$('html, body').animate({
+		    scrollTop: ($('#featured-products').offset().top - 50)
+		}, 0);
+	})
+
 
 	//sections featured
 	$('.sn-nsa .button').click(function() {
@@ -71,23 +99,4 @@ $(document).ready(function(){
 		$(href).addClass('animated');
 		return false;
 	});
-
-	// $('.slider-for').slick({
-	// 	slidesToShow: 1,
-	// 	slidesToScroll: 1,
-	// 	arrows: false,
-	// 	fade: true,
-	// 	// asNavFor: '.slider-nav',
-	// 	draggable: false,
-	// 	swipe: false,
-	// });
-	// $('.slider-nav').slick({
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 1,
-	// 	asNavFor: '.slider-for',
-	// 	dots: false,
-	// 	centerMode: false,
-	// 	focusOnSelect: true,
-	// 	draggable: false,
-	// });
 });

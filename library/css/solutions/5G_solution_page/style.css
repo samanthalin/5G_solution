@@ -52,12 +52,12 @@ html body .popup .popup-content {
   height: 90vh;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   padding: 0;
+  overflow-y: scroll;
 }
 html body .popup .popup-content button {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 40px;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -98,6 +98,7 @@ html body .popup .popup-content .popup-body .image img {
     width: 73vw;
     height: 70vh;
     max-width: 1200px;
+    overflow-y: hidden;
   }
   html body .popup .horizontal .popup-body {
     display: flex;
@@ -121,6 +122,12 @@ html body .popup .popup-content .popup-body .image img {
   html body .popup .horizontal {
     height: 60vh;
   }
+}
+html body #contactForm .popup-content {
+  overflow-y: scroll;
+  height: max-content;
+  max-height: 90vh;
+  max-width: 730px;
 }
 html body .show {
   display: flex !important;
@@ -168,6 +175,27 @@ html body nav.second-nav ul li a:hover {
 }
 @media screen and (min-width: 1200px) {
   html body nav.second-nav ul li a {
+    font-size: 18px;
+  }
+}
+html body nav.second-nav ul li button {
+  outline: none;
+  cursor: pointer;
+  background: none;
+  color: #575757;
+  border-radius: 7px;
+  padding: 5px 10px;
+  display: inline-block;
+  border: none;
+  font-family: "galano_grotesqueregular";
+  font-size: 16px;
+}
+html body nav.second-nav ul li button:hover {
+  text-decoration: none;
+  font-family: "galano_grotesquesemibold";
+}
+@media screen and (min-width: 1200px) {
+  html body nav.second-nav ul li button {
     font-size: 18px;
   }
 }
@@ -610,6 +638,7 @@ html body section.nr-solution .frame img.intro-img {
 @media screen and (min-width: 768px) {
   html body section.nr-solution .frame img.intro-img {
     display: none;
+    margin-left: 0;
   }
 }
 html body section.nr-solution .frame .text {
@@ -659,7 +688,7 @@ html body section.nr-solution .frame .text img.intro-img {
 }
 @media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
   html body section.nr-solution .frame .text img.intro-img {
-    max-width: 550px;
+    max-width: 400px;
   }
 }
 @media screen and (min-width: 768px) {

@@ -49,11 +49,11 @@ html{
 				height: 90vh;
 				box-shadow:  0 5px 15px rgba(0,0,0,.5);
 				padding: 0;
+				overflow-y: scroll;
 				button{
 					position: absolute;
 					top: 10px;
 					right: 15px;
-					font-size: 40px;
 					border: 0;
 					outline: none;
 					cursor: pointer;
@@ -99,6 +99,7 @@ html{
 					width: 73vw;
 					height: 70vh;
 					max-width: 1200px;
+					overflow-y: hidden;
 					.popup-body{
 						display: flex;
 						padding: 40px 0 40px 10px;
@@ -120,6 +121,14 @@ html{
 						height: 60vh;
 					}
 				}	
+			}
+		}
+		#contactForm{
+			.popup-content{
+				overflow-y: scroll;
+				height: max-content;
+				max-height: 90vh;
+				max-width: 730px;
 			}
 		}
 		.show{
@@ -155,6 +164,25 @@ html{
 						border-radius: 7px;
 						padding: 5px 10px;
 						display: inline-block;
+						&:hover{
+							text-decoration: none;
+							font-family: 'galano_grotesquesemibold';
+						}
+						@media screen and (min-width: 1200px) {
+							font-size: 18px;
+						}
+					}
+					button{
+						outline: none;
+						cursor: pointer;
+						background: none;
+						color: #575757;
+						border-radius: 7px;
+						padding: 5px 10px;
+						display: inline-block;
+						border: none;
+						font-family: 'galano_grotesqueregular';
+						font-size: 16px;
 						&:hover{
 							text-decoration: none;
 							font-family: 'galano_grotesquesemibold';
@@ -529,6 +557,7 @@ html{
 					margin-top: 14px;
 					@media screen and (min-width: 768px) {
 						display: none;
+						margin-left: 0;
 					}
 				}
 				.text{
@@ -562,7 +591,7 @@ html{
 									margin-top: 8vw;
 									margin-left: 0;
 									@media screen and (min-width: 1400px){
-										max-width: 550px;
+										max-width: 400px;
 									}
 								}
 							}	

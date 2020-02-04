@@ -1,0 +1,7 @@
+.inputWrap .lightGrayBg{background:none; padding: 0;}
+.inputWrap label, .bootstrap-select.btn-group .btn .filter-option, .singlecheckbox, .singlecheckboxdes{font-size:12px;}
+.inputWrap input[type="text"], .inputWrap input[type="email"]{font-size: 12px;height: 30px; padding: 3px 10px;}
+#submitWrap .lightBlueBtn{width:auto; margin: 0 auto;padding: 5px 15px;font-size: 13px;}
+.inputWrap .fullWidth{font-size:13px;}
+.inputWrap .lightGrayBg > div {margin-bottom: 12px;}
+.withBlueBtn {margin-bottom: 12px;}
