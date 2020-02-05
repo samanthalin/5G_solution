@@ -13,6 +13,17 @@
     transform: translateY(0%);
   }
 }
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 15px #00b2ff;
+  }
+  50% {
+    box-shadow: 0 0 5px #00b2ff;
+  }
+  100% {
+    box-shadow: 0 0 15px #00b2ff;
+  }
+}
 #solution-title {
   display: none;
 }
@@ -305,10 +316,24 @@ html body section.brief .frame .content button {
   margin-top: 15px;
   font-size: 16px;
   border: 0;
+  animation: icn-float 1.5s linear infinite;
+  cursor: pointer;
+}
+html body section.brief .frame .content button i {
+  margin-right: 6px;
+}
+@media screen and (min-width: 1200px) {
+  html body section.brief .frame .content button {
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 25px;
+  }
+  html body section.brief .frame .content button i {
+    margin-right: 10px;
+  }
 }
 @media screen and (min-width: 992px) {
   html body section.brief .frame .content {
-    margin-top: 25px;
     margin-top: 22px;
   }
 }
@@ -592,6 +617,7 @@ html body section.sn-nsa-hidden .switch-wrap ul.switch {
   display: flex;
   max-width: 1060px;
   margin: auto;
+  padding: 0;
 }
 html body section.sn-nsa-hidden .switch-wrap ul.switch li {
   flex: 1;
@@ -627,7 +653,7 @@ html body section.sn-nsa-hidden .switch-wrap ul.switch li .active:after {
   left: calc(50% - 10px);
 }
 html body section.sn-nsa-hidden .panel {
-  padding: 30px 0 20px 0;
+  padding: 30px 0;
   border: 0;
   box-shadow: none;
   margin: 0;
@@ -635,7 +661,7 @@ html body section.sn-nsa-hidden .panel {
 html body section.sn-nsa-hidden .panel .frame {
   width: 90%;
   margin: auto;
-  max-width: 980px;
+  max-width: 1060px;
 }
 html body section.sn-nsa-hidden .panel .frame .title {
   color: #575757;
@@ -652,26 +678,33 @@ html body section.sn-nsa-hidden .panel .frame img {
   max-width: 740px;
   display: block;
   margin: auto;
+  margin-top: 15px;
 }
 @media screen and (min-width: 1400px) {
   html body section.sn-nsa-hidden .panel .frame img {
-    max-width: initial;
+    max-width: 900px;
   }
 }
 @media screen and (min-width: 768px) {
   html body section.sn-nsa-hidden .panel .frame img.intro {
     width: 70%;
-    max-width: 450px;
+    max-width: 375px;
     margin-top: 30px;
     margin: 0;
     margin-top: 35px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1400px) {
+@media screen and (min-width: 768px) and (min-width: 992px) {
   html body section.sn-nsa-hidden .panel .frame img.intro {
-    max-width: 500px;
-    margin-top: 60px;
-    margin-left: 0;
+    float: right;
+    margin-top: -33px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
+  html body section.sn-nsa-hidden .panel .frame img.intro {
+    max-width: 475px;
+    margin-top: -45px;
+    margin-right: -40px;
   }
 }
 html body section.sn-nsa-hidden .panel .frame .structure-img {

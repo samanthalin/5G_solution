@@ -14,6 +14,18 @@
   }
 }
 
+@keyframes glowing {
+  0% {
+     box-shadow: 0 0 15px #00b2ff;  
+  }
+  50% {
+     box-shadow: 0 0 5px #00b2ff; 
+  } 
+  100% {
+    box-shadow: 0 0 15px #00b2ff; 
+  }
+}
+
 @mixin display-flex{
 	display: -webkit-flex; 
 	display: -moz-flex;
@@ -289,12 +301,24 @@ html{
 					    padding: 6px 15px;
 					    display: inline-block;
 					    border-radius: 10px;
-					    margin-top: 15px;
+			 		    margin-top: 15px;
 					    font-size: 16px;
 					    border: 0;
+					    animation: icn-float 1.5s linear infinite;
+					    cursor: pointer;
+					    i{
+					    	margin-right: 6px;
+					    }
+					    @media screen and (min-width: 1200px) {
+					    	font-size: 18px;
+					    	padding: 10px 25px;
+					    	margin-top: 25px;
+					    	i{
+						    	margin-right: 10px;
+						    }
+					    }
 					}
 					@media screen and (min-width: 992px) {
-						margin-top: 25px;
 						margin-top: 22px;
 						@media screen and (min-width: 1200px){
 							line-height: 25px;
@@ -513,6 +537,7 @@ html{
 					@include display-flex;
 					max-width: 1060px;
 					margin: auto;
+					padding: 0;
 					li{
 						flex: 1;
 						text-align: center;
@@ -547,14 +572,14 @@ html{
 				}//switch
 			}
 			.panel{
-				padding: 30px 0 20px 0;
+				padding: 30px 0;
 				border: 0;
 				box-shadow: none;
 				margin: 0;
 				.frame{
 					width: 90%;
 					margin: auto;
-					max-width: 980px;
+					max-width: 1060px;
 					.title{
 						color: #575757;
 						font-family: 'galano_grotesquesemibold';
@@ -568,23 +593,29 @@ html{
 						max-width: 740px;
 						display: block;
 						margin: auto;
+						margin-top: 15px;
 						@media screen and (min-width: 1400px){
-							max-width: initial;
+							max-width: 900px;
 						}
 					}
 					img.intro{
 						@media screen and (min-width: 768px) {
 							width: 70%;
-							max-width: 450px;
+							max-width: 375px;
 							margin-top: 30px;
 							margin: 0;
 							margin-top: 35px;
-							// margin-left: calc(50% - 400px);
-							@media screen and (min-width: 1400px){
-								max-width: 500px;
-								margin-top: 60px;
-								margin-left: 0;
-							}
+							@media screen and (min-width: 992px) {
+								float: right;
+								margin-top: -33px;
+    							@media screen and (min-width: 1200px) {
+    								@media screen and (min-width: 1400px){
+										max-width: 475px;
+										margin-top: -45px;
+										margin-right: -40px;
+									}	
+    							}
+							}	
 						}
 					}
 					.structure-img{

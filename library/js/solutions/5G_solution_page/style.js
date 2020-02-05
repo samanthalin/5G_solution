@@ -93,7 +93,10 @@ $(document).ready(function(){
 	$('.sn-nsa .button').click(function() {
 		$('.sn-nsa-hidden').toggle();
 		$('.sn-nsa-hidden').addClass('animated');
-		$('.switch a[href^="#standalone"]').addClass('active');
+		$('.switch a').removeClass('active');
+		$('.switch a[href="#standalone"]').addClass('active');
+		$('#non-standalone').hide();
+		$('#standalone').show();
 		return false;
 	});
 	$('.switch a').click(function() {
