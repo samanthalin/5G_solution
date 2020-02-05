@@ -71,6 +71,23 @@ $(document).ready(function(){
 		}, 0);
 	})
 
+	//video popup
+	$('#overview button').click(function() {
+		$('#video').addClass('show');
+		$('body').addClass('overflow');
+		$('html, body').animate({
+		    scrollTop: ($('#overview').offset().top - 150)
+		}, 0);
+		$('#video .video').addClass('animated');
+	});
+	$('#video .close').click(function() {
+		$('#video').removeClass('show');
+		$('body').removeClass('overflow');
+		$('html, body').animate({
+		    scrollTop: ($('#overview').offset().top - 150)
+		}, 0);
+	});
+
 
 	//sections featured
 	$('.sn-nsa .button').click(function() {

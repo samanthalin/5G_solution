@@ -151,6 +151,35 @@ html{
 				}
 			}
 		}
+		#video{
+			.video{
+				position: relative;
+				width: 90vw;
+				height: 51vw;
+				max-width: 560px;
+				max-height: 315px;
+				button{
+					position: absolute;
+					border: 0;
+					outline: none;
+					cursor: pointer;
+					background: none;
+					font-size: 32px;
+				    z-index: 1;
+				    top: -40px;
+    				right: -10px;
+    				color: white;
+    				opacity: 1;
+    				@media screen and (min-width: 768px){
+    					right: -30px;
+    				}
+				}
+				@media screen and (min-width: 768px) {
+					width: 560px;
+					height: 315px;
+				}
+			}
+		}
 		.show{
 			display: flex !important;
 		}
@@ -253,8 +282,20 @@ html{
 					color: #575757;
 					margin-top: 15px;
 					line-height: 22px;
+					button{
+						background-color: #00b2ff;
+					    color: white;
+					    font-family: "galano_grotesquesemibold" !important;
+					    padding: 6px 15px;
+					    display: inline-block;
+					    border-radius: 10px;
+					    margin-top: 15px;
+					    font-size: 16px;
+					    border: 0;
+					}
 					@media screen and (min-width: 992px) {
 						margin-top: 25px;
+						margin-top: 22px;
 						@media screen and (min-width: 1200px){
 							line-height: 25px;
 						}
@@ -332,6 +373,7 @@ html{
 						img{
 							@media screen and (min-width: 768px) {
 								width: 50%;
+								height: intrinsic;
 							}
 						}
 						.text{
@@ -539,7 +581,7 @@ html{
 							margin-top: 35px;
 							// margin-left: calc(50% - 400px);
 							@media screen and (min-width: 1400px){
-								max-width: 600px;
+								max-width: 500px;
 								margin-top: 60px;
 								margin-left: 0;
 							}

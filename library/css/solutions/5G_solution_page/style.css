@@ -144,6 +144,37 @@ html body #contactForm .popup-content .popup-body {
   padding: 30px 10px;
   overflow: hidden;
 }
+html body #video .video {
+  position: relative;
+  width: 90vw;
+  height: 51vw;
+  max-width: 560px;
+  max-height: 315px;
+}
+html body #video .video button {
+  position: absolute;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  font-size: 32px;
+  z-index: 1;
+  top: -40px;
+  right: -10px;
+  color: white;
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  html body #video .video button {
+    right: -30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html body #video .video {
+    width: 560px;
+    height: 315px;
+  }
+}
 html body .show {
   display: flex !important;
 }
@@ -264,9 +295,21 @@ html body section.brief .frame .content {
   margin-top: 15px;
   line-height: 22px;
 }
+html body section.brief .frame .content button {
+  background-color: #00b2ff;
+  color: white;
+  font-family: "galano_grotesquesemibold" !important;
+  padding: 6px 15px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: 0;
+}
 @media screen and (min-width: 992px) {
   html body section.brief .frame .content {
     margin-top: 25px;
+    margin-top: 22px;
   }
 }
 @media screen and (min-width: 992px) and (min-width: 1200px) {
@@ -360,6 +403,7 @@ html body section.solution-benifits .frame .box-wrap .left, html body section.so
 @media screen and (min-width: 768px) {
   html body section.solution-benifits .frame .box-wrap .down img {
     width: 50%;
+    height: intrinsic;
   }
 }
 @media screen and (min-width: 768px) {
@@ -625,7 +669,7 @@ html body section.sn-nsa-hidden .panel .frame img {
 }
 @media screen and (min-width: 768px) and (min-width: 1400px) {
   html body section.sn-nsa-hidden .panel .frame img.intro {
-    max-width: 600px;
+    max-width: 500px;
     margin-top: 60px;
     margin-left: 0;
   }
