@@ -135,9 +135,9 @@ html body #contactForm .popup-content {
   overflow-y: hidden;
   max-width: 730px;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   html body #contactForm .popup-content {
-    height: 630px;
+    max-height: 630px;
   }
 }
 html body #contactForm .popup-content .popup-body {
