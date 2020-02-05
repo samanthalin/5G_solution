@@ -14,6 +14,21 @@
   }
 }
 
+@mixin display-flex{
+	display: -webkit-flex; 
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: -o-flex;
+	display: flex;
+}
+@mixin flex($value){
+	-webkit-flex: $value;
+	-moz-flex: $value;
+	-ms-flex: $value;
+	-o-flex: $value;
+	flex: $value;
+}
+
 #solution-title{
 	display: none;
 }
@@ -101,7 +116,7 @@ html{
 					max-width: 1200px;
 					overflow-y: hidden;
 					.popup-body{
-						display: flex;
+						@include display-flex;
 						padding: 40px 0 40px 10px;
 						overflow: hidden;
 						.text, .image{
@@ -113,7 +128,7 @@ html{
 	    					padding: 0 15px 0 40px;
 						}
 						.image{
-							display: flex;
+							@include display-flex;
 							align-items: center;
 						}
 					}
@@ -125,13 +140,14 @@ html{
 		}
 		#contactForm{
 			.popup-content{
-				overflow-y: scroll;
+				overflow-y: hidden;
 				max-width: 730px;
-				@media screen and (min-width: 778px) {
-					height: 640px;
+				@media screen and (min-width: 770px) {
+					height: 630px;
 				}
 				.popup-body{
-					padding-bottom: 0;
+					padding: 30px 10px;
+					overflow: hidden;
 				}
 			}
 		}
@@ -160,6 +176,7 @@ html{
 			ul{
 				width: max-content;
 				margin: auto;
+				text-align: center;
 				li{
 					display: inline-block;
 					padding: 0 5px;
@@ -321,11 +338,12 @@ html{
 							@media screen and (min-width: 768px) {
 								padding-right: 25px;
 								align-self: center;
+								width: 50%;
 							}
 						}
 						@media screen and (min-width: 768px) {
 							width: 100%;
-							display: flex;
+							@include display-flex;
 							flex-direction: row-reverse;
 							@media screen and (min-width: 992px) {
 								margin-top: 60px;
@@ -333,7 +351,7 @@ html{
 						}
 					}
 					@media screen and (min-width: 768px) {
-						display: flex;
+						@include display-flex;
 						flex-wrap: wrap;
 						justify-content: space-between;
 						@media screen and (min-width: 1200px) {
@@ -413,7 +431,7 @@ html{
 					}
 					@media screen and (min-width: 768px) {
 						width: 50%;
-						margin: initial;
+						margin: 0;
 						@media screen and (min-width: 992px) {
 							align-self: center;
 							width: 58%;
@@ -425,7 +443,7 @@ html{
 					}
 				}//text
 				@media screen and (min-width: 768px) {
-					display: flex;
+					@include display-flex;
 					justify-content: flex-end;
 					width: 90%;
 					margin: auto;
@@ -450,7 +468,7 @@ html{
 				ul.switch{
 					width: 100%;
 					background-color: #00b2ff;
-					display: flex;
+					@include display-flex;
 					max-width: 1060px;
 					margin: auto;
 					li{
@@ -604,14 +622,14 @@ html{
 					}
 					@media screen and (min-width: 768px) {
 						width: 50%;
-						margin: initial;
+						margin: 0;
 						@media screen and (min-width: 992px) {
 							align-self: center;
 						}
 					}
 				}
 				@media screen and (min-width: 768px) {
-					display: flex;
+					@include display-flex;
 					width: 90%;
 					margin: auto;
 					@media screen and (min-width: 992px) {
@@ -727,7 +745,7 @@ html{
 				}
 				.cat-wrap{
 					margin-top: 25px;
-					display: flex;
+					@include display-flex;
     				justify-content: space-between;
     				max-width: 1440px;
     				margin: auto;
@@ -735,6 +753,7 @@ html{
 						text-align: center;
 						outline: none;
 						cursor: pointer;
+						display: block;
 						.img{
 							width: 150px;
 							height: 150px;
@@ -827,7 +846,7 @@ html{
 					width: 90%;
 					height: 100%;
 					margin: auto;
-					display: flex;
+					@include display-flex;
 					justify-content: flex-end;
 					align-items: center;
 					position: relative;
@@ -857,7 +876,7 @@ html{
 					width: 90%;
 					height: 100%;
 					margin: auto;
-					display: flex;
+					@include display-flex;
 					align-items: center;
 					.text{
 						width: 33%;
@@ -865,7 +884,7 @@ html{
 							width: 200px;
 							margin-top: 60px;
 							@media screen and (min-width: 1200px) {
-								width: 300px;
+								width: 271px;
 							}
 						}
 					}
@@ -881,7 +900,7 @@ html{
 					width: 90%;
 					height: 100%;
 					margin: auto;
-					display: flex;
+					@include display-flex;
 					align-items: flex-end;
 					justify-content: flex-end;
 					position: relative;
@@ -953,7 +972,7 @@ html{
 					@media screen and (min-width: 768px) {
 						display: block;
 						flex: 2;
-						display: flex;
+						@include display-flex;
 						align-items: flex-end;
 						justify-content: flex-end;
 						padding-right: 40px;
@@ -984,13 +1003,14 @@ html{
 					}
 					@media screen and (min-width: 768px) {
 						flex: 3;
+						-ms-flex-item-align: center;
 						@media screen and (min-width: 1200px) {
 							// padding-left: 30px;
 						}
 					}
 				}
 				@media screen and (min-width: 768px) {
-					display: flex;
+					@include display-flex;
 					height: 100%;
 					width: 90%;
 					margin: auto;
@@ -1068,7 +1088,7 @@ html{
 						}
 					}
 					@media screen and (min-width: 992px) {
-					    display: flex;
+					    @include display-flex;
 					    justify-content: space-between;
 					    margin-top: 2vw;
 

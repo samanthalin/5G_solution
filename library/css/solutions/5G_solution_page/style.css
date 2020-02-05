@@ -101,6 +101,10 @@ html body .popup .popup-content .popup-body .image img {
     overflow-y: hidden;
   }
   html body .popup .horizontal .popup-body {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     padding: 40px 0 40px 10px;
     overflow: hidden;
@@ -114,6 +118,10 @@ html body .popup .popup-content .popup-body .image img {
     padding: 0 15px 0 40px;
   }
   html body .popup .horizontal .popup-body .image {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     align-items: center;
   }
@@ -124,16 +132,17 @@ html body .popup .popup-content .popup-body .image img {
   }
 }
 html body #contactForm .popup-content {
-  overflow-y: scroll;
+  overflow-y: hidden;
   max-width: 730px;
 }
-@media screen and (min-width: 778px) {
+@media screen and (min-width: 770px) {
   html body #contactForm .popup-content {
-    height: 640px;
+    height: 630px;
   }
 }
 html body #contactForm .popup-content .popup-body {
-  padding-bottom: 0;
+  padding: 30px 10px;
+  overflow: hidden;
 }
 html body .show {
   display: flex !important;
@@ -164,6 +173,7 @@ html body nav.second-nav {
 html body nav.second-nav ul {
   width: max-content;
   margin: auto;
+  text-align: center;
 }
 html body nav.second-nav ul li {
   display: inline-block;
@@ -356,11 +366,16 @@ html body section.solution-benifits .frame .box-wrap .left, html body section.so
   html body section.solution-benifits .frame .box-wrap .down .text {
     padding-right: 25px;
     align-self: center;
+    width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
   html body section.solution-benifits .frame .box-wrap .down {
     width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -372,6 +387,10 @@ html body section.solution-benifits .frame .box-wrap .left, html body section.so
 }
 @media screen and (min-width: 768px) {
   html body section.solution-benifits .frame .box-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -471,7 +490,7 @@ html body section.sn-nsa .frame .text .button .arrow:before {
 @media screen and (min-width: 768px) {
   html body section.sn-nsa .frame .text {
     width: 50%;
-    margin: initial;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 992px) {
@@ -488,6 +507,10 @@ html body section.sn-nsa .frame .text .button .arrow:before {
 }
 @media screen and (min-width: 768px) {
   html body section.sn-nsa .frame {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     justify-content: flex-end;
     width: 90%;
@@ -518,6 +541,10 @@ html body section.sn-nsa-hidden .switch-wrap {
 html body section.sn-nsa-hidden .switch-wrap ul.switch {
   width: 100%;
   background-color: #00b2ff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
   display: flex;
   max-width: 1060px;
   margin: auto;
@@ -700,7 +727,7 @@ html body section.nr-solution .frame .text img.intro-img {
 @media screen and (min-width: 768px) {
   html body section.nr-solution .frame .text {
     width: 50%;
-    margin: initial;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 992px) {
@@ -710,6 +737,10 @@ html body section.nr-solution .frame .text img.intro-img {
 }
 @media screen and (min-width: 768px) {
   html body section.nr-solution .frame {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     width: 90%;
     margin: auto;
@@ -831,6 +862,10 @@ html body section.scenarios .frame .title {
 }
 html body section.scenarios .frame .cat-wrap {
   margin-top: 25px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
@@ -840,6 +875,7 @@ html body section.scenarios .frame .cat-wrap .cat {
   text-align: center;
   outline: none;
   cursor: pointer;
+  display: block;
 }
 html body section.scenarios .frame .cat-wrap .cat .img {
   width: 150px;
@@ -941,6 +977,10 @@ html body section.scenarios-panel .outdoor .frame {
   width: 90%;
   height: 100%;
   margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -972,6 +1012,10 @@ html body section.scenarios-panel .indoor .frame {
   width: 90%;
   height: 100%;
   margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
   display: flex;
   align-items: center;
 }
@@ -984,7 +1028,7 @@ html body section.scenarios-panel .indoor .frame .text img {
 }
 @media screen and (min-width: 1200px) {
   html body section.scenarios-panel .indoor .frame .text img {
-    width: 300px;
+    width: 271px;
   }
 }
 html body section.scenarios-panel .basement {
@@ -998,6 +1042,10 @@ html body section.scenarios-panel .basement .frame {
   width: 90%;
   height: 100%;
   margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -1084,6 +1132,10 @@ html body section.zyxel-lte .frame .image {
   html body section.zyxel-lte .frame .image {
     display: block;
     flex: 2;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -1123,10 +1175,15 @@ html body section.zyxel-lte .frame .text .content {
 @media screen and (min-width: 768px) {
   html body section.zyxel-lte .frame .text {
     flex: 3;
+    -ms-flex-item-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   html body section.zyxel-lte .frame {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     height: 100%;
     width: 90%;
@@ -1216,6 +1273,10 @@ html body section.featured-products .frame .product-wrap .product:hover:after {
 }
 @media screen and (min-width: 992px) {
   html body section.featured-products .frame .product-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
     display: flex;
     justify-content: space-between;
     margin-top: 2vw;

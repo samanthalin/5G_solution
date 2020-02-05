@@ -5,3 +5,8 @@
 .inputWrap .fullWidth{font-size:13px;}
 .inputWrap .lightGrayBg > div {margin-bottom: 12px;}
 .withBlueBtn {margin-bottom: 12px;}
+@media screen and (min-width: 770px){
+	html{
+		overflow-y: hidden !important;
+	}
+}
