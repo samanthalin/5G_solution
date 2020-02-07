@@ -14,7 +14,7 @@ $(document).ready(function(){
       $('html, body').stop().animate({
           'scrollTop': $(target).offset().top - 50
       }, 900, 'swing');
-      $('.active').removeClass('active');
+      $('.second-nav .active').removeClass('active');
       $(this).addClass('active');
     });
     $('.second-nav .contact-form').click(function(){

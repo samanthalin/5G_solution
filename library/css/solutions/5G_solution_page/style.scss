@@ -304,7 +304,6 @@ html{
 			 		    margin-top: 15px;
 					    font-size: 16px;
 					    border: 0;
-					    animation: icn-float 1.5s linear infinite;
 					    cursor: pointer;
 					    i{
 					    	margin-right: 6px;
@@ -594,6 +593,8 @@ html{
 						display: block;
 						margin: auto;
 						margin-top: 15px;
+						height: auto;
+						padding-top: 0;
 						@media screen and (min-width: 1400px){
 							max-width: 900px;
 						}
@@ -763,7 +764,7 @@ html{
 				}
 			}
 			.scenario-outdoor-img{
-				height: 60vw;
+				height: 72vw;
 				background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_02.jpg);
 				background-size: 180%;
     			background-position: 10% bottom;

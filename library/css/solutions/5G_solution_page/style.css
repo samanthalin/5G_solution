@@ -316,7 +316,6 @@ html body section.brief .frame .content button {
   margin-top: 15px;
   font-size: 16px;
   border: 0;
-  animation: icn-float 1.5s linear infinite;
   cursor: pointer;
 }
 html body section.brief .frame .content button i {
@@ -679,6 +678,8 @@ html body section.sn-nsa-hidden .panel .frame img {
   display: block;
   margin: auto;
   margin-top: 15px;
+  height: auto;
+  padding-top: 0;
 }
 @media screen and (min-width: 1400px) {
   html body section.sn-nsa-hidden .panel .frame img {
@@ -879,7 +880,7 @@ html body section.scenarios-mobile .basement .img {
   background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_3house_icon_03.png);
 }
 html body section.scenarios-mobile .scenario-outdoor-img {
-  height: 60vw;
+  height: 72vw;
   background-image: url(../../../assets/solutions/5G_solution_page/5g_nr_solution_diagram_02.jpg);
   background-size: 180%;
   background-position: 10% bottom;
