@@ -81,6 +81,7 @@ $(document).ready(function(){
 		$('#video .video').addClass('animated');
 	});
 	$('#video .close').click(function() {
+		$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 		$('#video').removeClass('show');
 		$('body').removeClass('overflow');
 		$('html, body').animate({
