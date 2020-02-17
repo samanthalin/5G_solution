@@ -1289,13 +1289,13 @@ html body section.featured-products .frame {
   max-width: 1200px;
   margin: auto;
 }
-html body section.featured-products .frame p.title {
+html body section.featured-products .frame .title {
   color: #575757;
   font-family: "galano_grotesquesemibold";
   font-size: 24px;
 }
 @media screen and (min-width: 992px) {
-  html body section.featured-products .frame p.title {
+  html body section.featured-products .frame .title {
     font-size: 36px;
   }
 }
